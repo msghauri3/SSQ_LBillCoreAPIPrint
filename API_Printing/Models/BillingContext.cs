@@ -10,7 +10,7 @@ namespace API_Printing.Models
         }
 
         public virtual DbSet<Configurations> Configurations { get; set; }
-
+        public  DbSet<Customer> Customers { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Configurations>(entity =>
@@ -24,7 +24,7 @@ namespace API_Printing.Models
                 entity.Property(e => e.ConfigValue)
                       .HasMaxLength(100);
             });
-
+            
             OnModelCreatingPartial(modelBuilder);
         }
 
