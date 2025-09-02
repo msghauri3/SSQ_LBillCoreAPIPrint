@@ -32,7 +32,7 @@
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table35 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Table table21 = new DevExpress.DataAccess.Sql.Table();
             DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
@@ -161,182 +161,112 @@
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader3 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader4 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader5 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader6 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader7 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader8 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader9 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader10 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader11 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader12 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader13 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader14 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader15 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader16 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader17 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader18 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader19 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader20 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader21 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader22 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader23 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader24 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader25 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader26 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader27 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader28 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader29 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader30 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader31 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader32 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader33 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.GroupHeader34 = new DevExpress.XtraReports.UI.GroupHeaderBand();
-            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.pageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
-            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table1 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow1 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table2 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader3 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table3 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader4 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table4 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow4 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader5 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table5 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader6 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table6 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader7 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table7 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell14 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader8 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table8 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow8 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell15 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell16 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader9 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table9 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell17 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell18 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader10 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table10 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow10 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell19 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell20 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader11 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table11 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow11 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell21 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell22 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader12 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table12 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow12 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell23 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader13 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table13 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow13 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell26 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader14 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table14 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow14 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell27 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell28 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader15 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table15 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow15 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell29 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell30 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader16 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table16 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow16 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell31 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell32 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader17 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table17 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow17 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell33 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell34 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader18 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table18 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow18 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell35 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell36 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader19 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table19 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow19 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell37 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell38 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader20 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table20 = new DevExpress.XtraReports.UI.XRTable();
             this.tableRow20 = new DevExpress.XtraReports.UI.XRTableRow();
             this.tableCell39 = new DevExpress.XtraReports.UI.XRTableCell();
             this.tableCell40 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table21 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow21 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell42 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table22 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow22 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell43 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell44 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table23 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow23 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell45 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell46 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table24 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow24 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell47 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell48 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table25 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow25 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell49 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell50 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table26 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow26 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell51 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell52 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table27 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow27 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell53 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell54 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table28 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow28 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell55 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell56 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table29 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow29 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell57 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell58 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table30 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow30 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell59 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell60 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table31 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow31 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell61 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell62 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table32 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow32 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell63 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell64 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table33 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow33 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell65 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell66 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.table34 = new DevExpress.XtraReports.UI.XRTable();
-            this.tableRow34 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.tableCell67 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.tableCell68 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.GroupHeader27 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.GroupFooter1 = new DevExpress.XtraReports.UI.GroupFooterBand();
             this.label2 = new DevExpress.XtraReports.UI.XRLabel();
             this.Title = new DevExpress.XtraReports.UI.XRControlStyle();
             this.GroupCaption1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -363,20 +293,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.table18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // sqlDataSource1
@@ -384,194 +300,194 @@
             this.sqlDataSource1.ConnectionName = "ConnectionBMSBT";
             this.sqlDataSource1.Name = "sqlDataSource1";
             columnExpression1.ColumnName = "uid";
-            table35.Name = "ElectricityBills";
-            columnExpression1.Table = table35;
+            table21.Name = "ElectricityBills";
+            columnExpression1.Table = table21;
             column1.Expression = columnExpression1;
             columnExpression2.ColumnName = "InvoiceNo";
-            columnExpression2.Table = table35;
+            columnExpression2.Table = table21;
             column2.Expression = columnExpression2;
             columnExpression3.ColumnName = "CustomerNo";
-            columnExpression3.Table = table35;
+            columnExpression3.Table = table21;
             column3.Expression = columnExpression3;
             columnExpression4.ColumnName = "CustomerName";
-            columnExpression4.Table = table35;
+            columnExpression4.Table = table21;
             column4.Expression = columnExpression4;
             columnExpression5.ColumnName = "BTNo";
-            columnExpression5.Table = table35;
+            columnExpression5.Table = table21;
             column5.Expression = columnExpression5;
             columnExpression6.ColumnName = "BillingMonth";
-            columnExpression6.Table = table35;
+            columnExpression6.Table = table21;
             column6.Expression = columnExpression6;
             columnExpression7.ColumnName = "BillingYear";
-            columnExpression7.Table = table35;
+            columnExpression7.Table = table21;
             column7.Expression = columnExpression7;
             columnExpression8.ColumnName = "BillingDate";
-            columnExpression8.Table = table35;
+            columnExpression8.Table = table21;
             column8.Expression = columnExpression8;
             columnExpression9.ColumnName = "DueDate";
-            columnExpression9.Table = table35;
+            columnExpression9.Table = table21;
             column9.Expression = columnExpression9;
             columnExpression10.ColumnName = "ReadingDate";
-            columnExpression10.Table = table35;
+            columnExpression10.Table = table21;
             column10.Expression = columnExpression10;
             columnExpression11.ColumnName = "IssueDate";
-            columnExpression11.Table = table35;
+            columnExpression11.Table = table21;
             column11.Expression = columnExpression11;
             columnExpression12.ColumnName = "ValidDate";
-            columnExpression12.Table = table35;
+            columnExpression12.Table = table21;
             column12.Expression = columnExpression12;
             columnExpression13.ColumnName = "MeterType";
-            columnExpression13.Table = table35;
+            columnExpression13.Table = table21;
             column13.Expression = columnExpression13;
             columnExpression14.ColumnName = "MeterNo";
-            columnExpression14.Table = table35;
+            columnExpression14.Table = table21;
             column14.Expression = columnExpression14;
             columnExpression15.ColumnName = "PaymentStatus";
-            columnExpression15.Table = table35;
+            columnExpression15.Table = table21;
             column15.Expression = columnExpression15;
             columnExpression16.ColumnName = "PaymentDate";
-            columnExpression16.Table = table35;
+            columnExpression16.Table = table21;
             column16.Expression = columnExpression16;
             columnExpression17.ColumnName = "PaymentMethod";
-            columnExpression17.Table = table35;
+            columnExpression17.Table = table21;
             column17.Expression = columnExpression17;
             columnExpression18.ColumnName = "BankDetail";
-            columnExpression18.Table = table35;
+            columnExpression18.Table = table21;
             column18.Expression = columnExpression18;
             columnExpression19.ColumnName = "EnergyCoast";
-            columnExpression19.Table = table35;
+            columnExpression19.Table = table21;
             column19.Expression = columnExpression19;
             columnExpression20.ColumnName = "CurrentBill";
-            columnExpression20.Table = table35;
+            columnExpression20.Table = table21;
             column20.Expression = columnExpression20;
             columnExpression21.ColumnName = "BillAmount";
-            columnExpression21.Table = table35;
+            columnExpression21.Table = table21;
             column21.Expression = columnExpression21;
             columnExpression22.ColumnName = "LastUpdated";
-            columnExpression22.Table = table35;
+            columnExpression22.Table = table21;
             column22.Expression = columnExpression22;
             columnExpression23.ColumnName = "BillAmountInDueDate";
-            columnExpression23.Table = table35;
+            columnExpression23.Table = table21;
             column23.Expression = columnExpression23;
             columnExpression24.ColumnName = "BillSurcharge";
-            columnExpression24.Table = table35;
+            columnExpression24.Table = table21;
             column24.Expression = columnExpression24;
             columnExpression25.ColumnName = "BillAmountAfterDueDate";
-            columnExpression25.Table = table35;
+            columnExpression25.Table = table21;
             column25.Expression = columnExpression25;
             columnExpression26.ColumnName = "PreviousReading1";
-            columnExpression26.Table = table35;
+            columnExpression26.Table = table21;
             column26.Expression = columnExpression26;
             columnExpression27.ColumnName = "CurrentReading1";
-            columnExpression27.Table = table35;
+            columnExpression27.Table = table21;
             column27.Expression = columnExpression27;
             columnExpression28.ColumnName = "Difference1";
-            columnExpression28.Table = table35;
+            columnExpression28.Table = table21;
             column28.Expression = columnExpression28;
             columnExpression29.ColumnName = "PreviousReading2";
-            columnExpression29.Table = table35;
+            columnExpression29.Table = table21;
             column29.Expression = columnExpression29;
             columnExpression30.ColumnName = "CurrentReading2";
-            columnExpression30.Table = table35;
+            columnExpression30.Table = table21;
             column30.Expression = columnExpression30;
             columnExpression31.ColumnName = "Difference2";
-            columnExpression31.Table = table35;
+            columnExpression31.Table = table21;
             column31.Expression = columnExpression31;
             columnExpression32.ColumnName = "PreviousSolarReading";
-            columnExpression32.Table = table35;
+            columnExpression32.Table = table21;
             column32.Expression = columnExpression32;
             columnExpression33.ColumnName = "CurrentSolarReading";
-            columnExpression33.Table = table35;
+            columnExpression33.Table = table21;
             column33.Expression = columnExpression33;
             columnExpression34.ColumnName = "DifferenceSolar";
-            columnExpression34.Table = table35;
+            columnExpression34.Table = table21;
             column34.Expression = columnExpression34;
             columnExpression35.ColumnName = "TotalUnit";
-            columnExpression35.Table = table35;
+            columnExpression35.Table = table21;
             column35.Expression = columnExpression35;
             columnExpression36.ColumnName = "OPC";
-            columnExpression36.Table = table35;
+            columnExpression36.Table = table21;
             column36.Expression = columnExpression36;
             columnExpression37.ColumnName = "GST";
-            columnExpression37.Table = table35;
+            columnExpression37.Table = table21;
             column37.Expression = columnExpression37;
             columnExpression38.ColumnName = "PTVFEE";
-            columnExpression38.Table = table35;
+            columnExpression38.Table = table21;
             column38.Expression = columnExpression38;
             columnExpression39.ColumnName = "FURTHERTAX";
-            columnExpression39.Table = table35;
+            columnExpression39.Table = table21;
             column39.Expression = columnExpression39;
             columnExpression40.ColumnName = "FPACHARGES";
-            columnExpression40.Table = table35;
+            columnExpression40.Table = table21;
             column40.Expression = columnExpression40;
             columnExpression41.ColumnName = "CreatedBy";
-            columnExpression41.Table = table35;
+            columnExpression41.Table = table21;
             column41.Expression = columnExpression41;
             columnExpression42.ColumnName = "CreateOn";
-            columnExpression42.Table = table35;
+            columnExpression42.Table = table21;
             column42.Expression = columnExpression42;
             columnExpression43.ColumnName = "UpdateBy";
-            columnExpression43.Table = table35;
+            columnExpression43.Table = table21;
             column43.Expression = columnExpression43;
             columnExpression44.ColumnName = "UpdateOn";
-            columnExpression44.Table = table35;
+            columnExpression44.Table = table21;
             column44.Expression = columnExpression44;
             columnExpression45.ColumnName = "Arrears";
-            columnExpression45.Table = table35;
+            columnExpression45.Table = table21;
             column45.Expression = columnExpression45;
             columnExpression46.ColumnName = "History";
-            columnExpression46.Table = table35;
+            columnExpression46.Table = table21;
             column46.Expression = columnExpression46;
             columnExpression47.ColumnName = "AmountPaid";
-            columnExpression47.Table = table35;
+            columnExpression47.Table = table21;
             column47.Expression = columnExpression47;
             columnExpression48.ColumnName = "Sector";
-            columnExpression48.Table = table35;
+            columnExpression48.Table = table21;
             column48.Expression = columnExpression48;
             columnExpression49.ColumnName = "Block";
-            columnExpression49.Table = table35;
+            columnExpression49.Table = table21;
             column49.Expression = columnExpression49;
             columnExpression50.ColumnName = "PushDate";
-            columnExpression50.Table = table35;
+            columnExpression50.Table = table21;
             column50.Expression = columnExpression50;
             columnExpression51.ColumnName = "PushedBy";
-            columnExpression51.Table = table35;
+            columnExpression51.Table = table21;
             column51.Expression = columnExpression51;
             columnExpression52.ColumnName = "InstalledOn";
-            columnExpression52.Table = table35;
+            columnExpression52.Table = table21;
             column52.Expression = columnExpression52;
             columnExpression53.ColumnName = "OPCRate";
-            columnExpression53.Table = table35;
+            columnExpression53.Table = table21;
             column53.Expression = columnExpression53;
             columnExpression54.ColumnName = "UnitsAmount";
-            columnExpression54.Table = table35;
+            columnExpression54.Table = table21;
             column54.Expression = columnExpression54;
             columnExpression55.ColumnName = "fpa1";
-            columnExpression55.Table = table35;
+            columnExpression55.Table = table21;
             column55.Expression = columnExpression55;
             columnExpression56.ColumnName = "fpa2";
-            columnExpression56.Table = table35;
+            columnExpression56.Table = table21;
             column56.Expression = columnExpression56;
             columnExpression57.ColumnName = "fpa3";
-            columnExpression57.Table = table35;
+            columnExpression57.Table = table21;
             column57.Expression = columnExpression57;
             columnExpression58.ColumnName = "FPARate";
-            columnExpression58.Table = table35;
+            columnExpression58.Table = table21;
             column58.Expression = columnExpression58;
             columnExpression59.ColumnName = "MeterStatus";
-            columnExpression59.Table = table35;
+            columnExpression59.Table = table21;
             column59.Expression = columnExpression59;
             columnExpression60.ColumnName = "Fine";
-            columnExpression60.Table = table35;
+            columnExpression60.Table = table21;
             column60.Expression = columnExpression60;
             columnExpression61.ColumnName = "SalesTax";
-            columnExpression61.Table = table35;
+            columnExpression61.Table = table21;
             column61.Expression = columnExpression61;
             columnExpression62.ColumnName = "IncomeTax";
-            columnExpression62.Table = table35;
+            columnExpression62.Table = table21;
             column62.Expression = columnExpression62;
             columnExpression63.ColumnName = "ExtraTax";
-            columnExpression63.Table = table35;
+            columnExpression63.Table = table21;
             column63.Expression = columnExpression63;
             selectQuery1.Columns.Add(column1);
             selectQuery1.Columns.Add(column2);
@@ -637,13 +553,14 @@
             selectQuery1.Columns.Add(column62);
             selectQuery1.Columns.Add(column63);
             selectQuery1.Name = "ElectricityBills";
-            selectQuery1.Tables.Add(table35);
+            selectQuery1.Tables.Add(table21);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // TopMargin
             // 
+            this.TopMargin.HeightF = 68.75F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -652,400 +569,6 @@
             this.pageInfo1,
             this.pageInfo2});
             this.BottomMargin.Name = "BottomMargin";
-            // 
-            // ReportHeader
-            // 
-            this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.label1});
-            this.ReportHeader.HeightF = 60F;
-            this.ReportHeader.Name = "ReportHeader";
-            // 
-            // GroupHeader1
-            // 
-            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table1});
-            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("IncomeTax", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader1.HeightF = 27F;
-            this.GroupHeader1.Level = 1;
-            this.GroupHeader1.Name = "GroupHeader1";
-            // 
-            // GroupHeader2
-            // 
-            this.GroupHeader2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table2});
-            this.GroupHeader2.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("GST", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader2.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader2.HeightF = 27F;
-            this.GroupHeader2.Level = 2;
-            this.GroupHeader2.Name = "GroupHeader2";
-            // 
-            // GroupHeader3
-            // 
-            this.GroupHeader3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table3});
-            this.GroupHeader3.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("TotalUnit", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader3.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader3.HeightF = 27F;
-            this.GroupHeader3.Level = 3;
-            this.GroupHeader3.Name = "GroupHeader3";
-            // 
-            // GroupHeader4
-            // 
-            this.GroupHeader4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table4});
-            this.GroupHeader4.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("DifferenceSolar", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader4.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader4.HeightF = 27F;
-            this.GroupHeader4.Level = 4;
-            this.GroupHeader4.Name = "GroupHeader4";
-            // 
-            // GroupHeader5
-            // 
-            this.GroupHeader5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table5});
-            this.GroupHeader5.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("CurrentSolarReading", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader5.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader5.HeightF = 27F;
-            this.GroupHeader5.Level = 5;
-            this.GroupHeader5.Name = "GroupHeader5";
-            // 
-            // GroupHeader6
-            // 
-            this.GroupHeader6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table6});
-            this.GroupHeader6.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("PreviousSolarReading", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader6.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader6.HeightF = 27F;
-            this.GroupHeader6.Level = 6;
-            this.GroupHeader6.Name = "GroupHeader6";
-            // 
-            // GroupHeader7
-            // 
-            this.GroupHeader7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table7});
-            this.GroupHeader7.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("Difference2", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader7.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader7.HeightF = 27F;
-            this.GroupHeader7.Level = 7;
-            this.GroupHeader7.Name = "GroupHeader7";
-            // 
-            // GroupHeader8
-            // 
-            this.GroupHeader8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table8});
-            this.GroupHeader8.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("CurrentReading2", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader8.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader8.HeightF = 27F;
-            this.GroupHeader8.Level = 8;
-            this.GroupHeader8.Name = "GroupHeader8";
-            // 
-            // GroupHeader9
-            // 
-            this.GroupHeader9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table9});
-            this.GroupHeader9.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("PreviousReading2", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader9.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader9.HeightF = 27F;
-            this.GroupHeader9.Level = 9;
-            this.GroupHeader9.Name = "GroupHeader9";
-            // 
-            // GroupHeader10
-            // 
-            this.GroupHeader10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table10});
-            this.GroupHeader10.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("Difference1", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader10.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader10.HeightF = 27F;
-            this.GroupHeader10.Level = 10;
-            this.GroupHeader10.Name = "GroupHeader10";
-            // 
-            // GroupHeader11
-            // 
-            this.GroupHeader11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table11});
-            this.GroupHeader11.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("CurrentReading1", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader11.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader11.HeightF = 27F;
-            this.GroupHeader11.Level = 11;
-            this.GroupHeader11.Name = "GroupHeader11";
-            // 
-            // GroupHeader12
-            // 
-            this.GroupHeader12.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table12});
-            this.GroupHeader12.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("PreviousReading1", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader12.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader12.HeightF = 27F;
-            this.GroupHeader12.Level = 12;
-            this.GroupHeader12.Name = "GroupHeader12";
-            // 
-            // GroupHeader13
-            // 
-            this.GroupHeader13.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table13});
-            this.GroupHeader13.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BillAmountAfterDueDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader13.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader13.HeightF = 27F;
-            this.GroupHeader13.Level = 13;
-            this.GroupHeader13.Name = "GroupHeader13";
-            // 
-            // GroupHeader14
-            // 
-            this.GroupHeader14.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table14});
-            this.GroupHeader14.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BillSurcharge", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader14.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader14.HeightF = 27F;
-            this.GroupHeader14.Level = 14;
-            this.GroupHeader14.Name = "GroupHeader14";
-            // 
-            // GroupHeader15
-            // 
-            this.GroupHeader15.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table15});
-            this.GroupHeader15.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BillAmountInDueDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader15.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader15.HeightF = 27F;
-            this.GroupHeader15.Level = 15;
-            this.GroupHeader15.Name = "GroupHeader15";
-            // 
-            // GroupHeader16
-            // 
-            this.GroupHeader16.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table16});
-            this.GroupHeader16.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("LastUpdated", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader16.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader16.HeightF = 27F;
-            this.GroupHeader16.Level = 16;
-            this.GroupHeader16.Name = "GroupHeader16";
-            // 
-            // GroupHeader17
-            // 
-            this.GroupHeader17.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table17});
-            this.GroupHeader17.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BillAmount", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader17.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader17.HeightF = 27F;
-            this.GroupHeader17.Level = 17;
-            this.GroupHeader17.Name = "GroupHeader17";
-            // 
-            // GroupHeader18
-            // 
-            this.GroupHeader18.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table18});
-            this.GroupHeader18.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("CurrentBill", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader18.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader18.HeightF = 27F;
-            this.GroupHeader18.Level = 18;
-            this.GroupHeader18.Name = "GroupHeader18";
-            // 
-            // GroupHeader19
-            // 
-            this.GroupHeader19.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table19});
-            this.GroupHeader19.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("PaymentMethod", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader19.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader19.HeightF = 27F;
-            this.GroupHeader19.Level = 19;
-            this.GroupHeader19.Name = "GroupHeader19";
-            // 
-            // GroupHeader20
-            // 
-            this.GroupHeader20.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table20});
-            this.GroupHeader20.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("PaymentDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader20.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader20.HeightF = 27F;
-            this.GroupHeader20.Level = 20;
-            this.GroupHeader20.Name = "GroupHeader20";
-            // 
-            // GroupHeader21
-            // 
-            this.GroupHeader21.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table21});
-            this.GroupHeader21.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("PaymentStatus", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader21.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader21.HeightF = 27F;
-            this.GroupHeader21.Level = 21;
-            this.GroupHeader21.Name = "GroupHeader21";
-            // 
-            // GroupHeader22
-            // 
-            this.GroupHeader22.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table22});
-            this.GroupHeader22.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("MeterNo", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader22.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader22.HeightF = 27F;
-            this.GroupHeader22.Level = 22;
-            this.GroupHeader22.Name = "GroupHeader22";
-            // 
-            // GroupHeader23
-            // 
-            this.GroupHeader23.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table23});
-            this.GroupHeader23.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("MeterType", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader23.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader23.HeightF = 27F;
-            this.GroupHeader23.Level = 23;
-            this.GroupHeader23.Name = "GroupHeader23";
-            // 
-            // GroupHeader24
-            // 
-            this.GroupHeader24.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table24});
-            this.GroupHeader24.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("IssueDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader24.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader24.HeightF = 27F;
-            this.GroupHeader24.Level = 24;
-            this.GroupHeader24.Name = "GroupHeader24";
-            // 
-            // GroupHeader25
-            // 
-            this.GroupHeader25.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table25});
-            this.GroupHeader25.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("ReadingDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader25.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader25.HeightF = 27F;
-            this.GroupHeader25.Level = 25;
-            this.GroupHeader25.Name = "GroupHeader25";
-            // 
-            // GroupHeader26
-            // 
-            this.GroupHeader26.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table26});
-            this.GroupHeader26.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("DueDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader26.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader26.HeightF = 27F;
-            this.GroupHeader26.Level = 26;
-            this.GroupHeader26.Name = "GroupHeader26";
-            // 
-            // GroupHeader27
-            // 
-            this.GroupHeader27.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table27});
-            this.GroupHeader27.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BillingDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader27.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader27.HeightF = 27F;
-            this.GroupHeader27.Level = 27;
-            this.GroupHeader27.Name = "GroupHeader27";
-            // 
-            // GroupHeader28
-            // 
-            this.GroupHeader28.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table28});
-            this.GroupHeader28.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BillingYear", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader28.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader28.HeightF = 27F;
-            this.GroupHeader28.Level = 28;
-            this.GroupHeader28.Name = "GroupHeader28";
-            // 
-            // GroupHeader29
-            // 
-            this.GroupHeader29.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table29});
-            this.GroupHeader29.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BillingMonth", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader29.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader29.HeightF = 27F;
-            this.GroupHeader29.Level = 29;
-            this.GroupHeader29.Name = "GroupHeader29";
-            // 
-            // GroupHeader30
-            // 
-            this.GroupHeader30.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table30});
-            this.GroupHeader30.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("BTNo", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader30.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader30.HeightF = 27F;
-            this.GroupHeader30.Level = 30;
-            this.GroupHeader30.Name = "GroupHeader30";
-            // 
-            // GroupHeader31
-            // 
-            this.GroupHeader31.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table31});
-            this.GroupHeader31.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("CustomerName", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader31.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader31.HeightF = 27F;
-            this.GroupHeader31.Level = 31;
-            this.GroupHeader31.Name = "GroupHeader31";
-            // 
-            // GroupHeader32
-            // 
-            this.GroupHeader32.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table32});
-            this.GroupHeader32.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("CustomerNo", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader32.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader32.HeightF = 27F;
-            this.GroupHeader32.Level = 32;
-            this.GroupHeader32.Name = "GroupHeader32";
-            // 
-            // GroupHeader33
-            // 
-            this.GroupHeader33.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table33});
-            this.GroupHeader33.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("InvoiceNo", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader33.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader33.HeightF = 27F;
-            this.GroupHeader33.Level = 33;
-            this.GroupHeader33.Name = "GroupHeader33";
-            // 
-            // GroupHeader34
-            // 
-            this.GroupHeader34.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.table34});
-            this.GroupHeader34.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("uid", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-            this.GroupHeader34.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
-            this.GroupHeader34.HeightF = 27F;
-            this.GroupHeader34.Level = 34;
-            this.GroupHeader34.Name = "GroupHeader34";
-            // 
-            // Detail
-            // 
-            this.Detail.HeightF = 0F;
-            this.Detail.Name = "Detail";
-            // 
-            // GroupFooter1
-            // 
-            this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.label2});
-            this.GroupFooter1.GroupUnion = DevExpress.XtraReports.UI.GroupFooterUnion.WithLastDetail;
-            this.GroupFooter1.HeightF = 6F;
-            this.GroupFooter1.Name = "GroupFooter1";
             // 
             // pageInfo1
             // 
@@ -1064,13 +587,21 @@
             this.pageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             this.pageInfo2.TextFormatString = "Page {0} of {1}";
             // 
-            // label1
+            // ReportHeader
             // 
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.label1.Name = "label1";
-            this.label1.SizeF = new System.Drawing.SizeF(627F, 24.19433F);
-            this.label1.StyleName = "Title";
-            this.label1.Text = "Report Title";
+            this.ReportHeader.HeightF = 60F;
+            this.ReportHeader.Name = "ReportHeader";
+            // 
+            // GroupHeader1
+            // 
+            this.GroupHeader1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table1});
+            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("IncomeTax", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader1.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader1.HeightF = 27F;
+            this.GroupHeader1.Level = 1;
+            this.GroupHeader1.Name = "GroupHeader1";
             // 
             // table1
             // 
@@ -1102,6 +633,17 @@
             this.tableCell2.Name = "tableCell2";
             this.tableCell2.StyleName = "GroupData1";
             this.tableCell2.Weight = 0.87251391251121413D;
+            // 
+            // GroupHeader2
+            // 
+            this.GroupHeader2.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table2});
+            this.GroupHeader2.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("GST", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader2.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader2.HeightF = 27F;
+            this.GroupHeader2.Level = 2;
+            this.GroupHeader2.Name = "GroupHeader2";
             // 
             // table2
             // 
@@ -1135,6 +677,17 @@
             this.tableCell4.TextFormatString = "{0:C2}";
             this.tableCell4.Weight = 0.94967334996760366D;
             // 
+            // GroupHeader3
+            // 
+            this.GroupHeader3.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table3});
+            this.GroupHeader3.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("TotalUnit", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader3.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader3.HeightF = 27F;
+            this.GroupHeader3.Level = 3;
+            this.GroupHeader3.Name = "GroupHeader3";
+            // 
             // table3
             // 
             this.table3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1167,6 +720,17 @@
             this.tableCell6.TextFormatString = "{0:C2}";
             this.tableCell6.Weight = 0.87862628650817387D;
             // 
+            // GroupHeader4
+            // 
+            this.GroupHeader4.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table4});
+            this.GroupHeader4.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("DifferenceSolar", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader4.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader4.HeightF = 27F;
+            this.GroupHeader4.Level = 4;
+            this.GroupHeader4.Name = "GroupHeader4";
+            // 
             // table4
             // 
             this.table4.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1197,6 +761,17 @@
             this.tableCell8.Name = "tableCell8";
             this.tableCell8.StyleName = "GroupData1";
             this.tableCell8.Weight = 0.80144003057403812D;
+            // 
+            // GroupHeader5
+            // 
+            this.GroupHeader5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table5});
+            this.GroupHeader5.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("CurrentSolarReading", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader5.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader5.HeightF = 27F;
+            this.GroupHeader5.Level = 5;
+            this.GroupHeader5.Name = "GroupHeader5";
             // 
             // table5
             // 
@@ -1229,6 +804,17 @@
             this.tableCell10.StyleName = "GroupData1";
             this.tableCell10.Weight = 0.73951256370240226D;
             // 
+            // GroupHeader6
+            // 
+            this.GroupHeader6.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table6});
+            this.GroupHeader6.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("PreviousSolarReading", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader6.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader6.HeightF = 27F;
+            this.GroupHeader6.Level = 6;
+            this.GroupHeader6.Name = "GroupHeader6";
+            // 
             // table6
             // 
             this.table6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1259,6 +845,17 @@
             this.tableCell12.Name = "tableCell12";
             this.tableCell12.StyleName = "GroupData1";
             this.tableCell12.Weight = 0.73440843792052934D;
+            // 
+            // GroupHeader7
+            // 
+            this.GroupHeader7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table7});
+            this.GroupHeader7.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("Difference2", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader7.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader7.HeightF = 27F;
+            this.GroupHeader7.Level = 7;
+            this.GroupHeader7.Name = "GroupHeader7";
             // 
             // table7
             // 
@@ -1291,6 +888,17 @@
             this.tableCell14.StyleName = "GroupData1";
             this.tableCell14.Weight = 0.86031573963317387D;
             // 
+            // GroupHeader8
+            // 
+            this.GroupHeader8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table8});
+            this.GroupHeader8.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("CurrentReading2", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader8.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader8.HeightF = 27F;
+            this.GroupHeader8.Level = 8;
+            this.GroupHeader8.Name = "GroupHeader8";
+            // 
             // table8
             // 
             this.table8.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1321,6 +929,17 @@
             this.tableCell16.Name = "tableCell16";
             this.tableCell16.StyleName = "GroupData1";
             this.tableCell16.Weight = 0.79838827276153812D;
+            // 
+            // GroupHeader9
+            // 
+            this.GroupHeader9.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table9});
+            this.GroupHeader9.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("PreviousReading2", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader9.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader9.HeightF = 27F;
+            this.GroupHeader9.Level = 9;
+            this.GroupHeader9.Name = "GroupHeader9";
             // 
             // table9
             // 
@@ -1353,6 +972,17 @@
             this.tableCell18.StyleName = "GroupData1";
             this.tableCell18.Weight = 0.79328414697966509D;
             // 
+            // GroupHeader10
+            // 
+            this.GroupHeader10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table10});
+            this.GroupHeader10.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("Difference1", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader10.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader10.HeightF = 27F;
+            this.GroupHeader10.Level = 10;
+            this.GroupHeader10.Name = "GroupHeader10";
+            // 
             // table10
             // 
             this.table10.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1383,6 +1013,17 @@
             this.tableCell20.Name = "tableCell20";
             this.tableCell20.StyleName = "GroupData1";
             this.tableCell20.Weight = 0.86031573963317387D;
+            // 
+            // GroupHeader11
+            // 
+            this.GroupHeader11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table11});
+            this.GroupHeader11.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("CurrentReading1", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader11.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader11.HeightF = 27F;
+            this.GroupHeader11.Level = 11;
+            this.GroupHeader11.Name = "GroupHeader11";
             // 
             // table11
             // 
@@ -1415,6 +1056,17 @@
             this.tableCell22.StyleName = "GroupData1";
             this.tableCell22.Weight = 0.79838827276153812D;
             // 
+            // GroupHeader12
+            // 
+            this.GroupHeader12.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table12});
+            this.GroupHeader12.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("PreviousReading1", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader12.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader12.HeightF = 27F;
+            this.GroupHeader12.Level = 12;
+            this.GroupHeader12.Name = "GroupHeader12";
+            // 
             // table12
             // 
             this.table12.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1445,6 +1097,17 @@
             this.tableCell24.Name = "tableCell24";
             this.tableCell24.StyleName = "GroupData1";
             this.tableCell24.Weight = 0.79328414697966509D;
+            // 
+            // GroupHeader13
+            // 
+            this.GroupHeader13.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table13});
+            this.GroupHeader13.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("BillAmountAfterDueDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader13.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader13.HeightF = 27F;
+            this.GroupHeader13.Level = 13;
+            this.GroupHeader13.Name = "GroupHeader13";
             // 
             // table13
             // 
@@ -1477,6 +1140,17 @@
             this.tableCell26.StyleName = "GroupData1";
             this.tableCell26.Weight = 0.69689503354889359D;
             // 
+            // GroupHeader14
+            // 
+            this.GroupHeader14.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table14});
+            this.GroupHeader14.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("BillSurcharge", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader14.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader14.HeightF = 27F;
+            this.GroupHeader14.Level = 14;
+            this.GroupHeader14.Name = "GroupHeader14";
+            // 
             // table14
             // 
             this.table14.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1507,6 +1181,17 @@
             this.tableCell28.Name = "tableCell28";
             this.tableCell28.StyleName = "GroupData1";
             this.tableCell28.Weight = 0.82378391101599879D;
+            // 
+            // GroupHeader15
+            // 
+            this.GroupHeader15.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table15});
+            this.GroupHeader15.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("BillAmountInDueDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader15.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader15.HeightF = 27F;
+            this.GroupHeader15.Level = 15;
+            this.GroupHeader15.Name = "GroupHeader15";
             // 
             // table15
             // 
@@ -1539,6 +1224,17 @@
             this.tableCell30.StyleName = "GroupData1";
             this.tableCell30.Weight = 0.73953037779106856D;
             // 
+            // GroupHeader16
+            // 
+            this.GroupHeader16.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table16});
+            this.GroupHeader16.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("LastUpdated", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader16.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader16.HeightF = 27F;
+            this.GroupHeader16.Level = 16;
+            this.GroupHeader16.Name = "GroupHeader16";
+            // 
             // table16
             // 
             this.table16.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1569,6 +1265,17 @@
             this.tableCell32.Name = "tableCell32";
             this.tableCell32.StyleName = "GroupData1";
             this.tableCell32.Weight = 0.84611888441362637D;
+            // 
+            // GroupHeader17
+            // 
+            this.GroupHeader17.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table17});
+            this.GroupHeader17.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("BillAmount", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader17.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader17.HeightF = 27F;
+            this.GroupHeader17.Level = 17;
+            this.GroupHeader17.Name = "GroupHeader17";
             // 
             // table17
             // 
@@ -1602,6 +1309,17 @@
             this.tableCell34.TextFormatString = "{0:C2}";
             this.tableCell34.Weight = 8848640D;
             // 
+            // GroupHeader18
+            // 
+            this.GroupHeader18.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table18});
+            this.GroupHeader18.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("CurrentBill", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader18.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader18.HeightF = 27F;
+            this.GroupHeader18.Level = 18;
+            this.GroupHeader18.Name = "GroupHeader18";
+            // 
             // table18
             // 
             this.table18.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1634,6 +1352,17 @@
             this.tableCell36.TextFormatString = "{0:C2}";
             this.tableCell36.Weight = 0.85222240003862637D;
             // 
+            // GroupHeader19
+            // 
+            this.GroupHeader19.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table19});
+            this.GroupHeader19.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("PaymentMethod", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader19.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader19.HeightF = 27F;
+            this.GroupHeader19.Level = 19;
+            this.GroupHeader19.Name = "GroupHeader19";
+            // 
             // table19
             // 
             this.table19.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
@@ -1664,6 +1393,17 @@
             this.tableCell38.Name = "tableCell38";
             this.tableCell38.StyleName = "GroupData1";
             this.tableCell38.Weight = 0.81362919906299835D;
+            // 
+            // GroupHeader20
+            // 
+            this.GroupHeader20.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.table20});
+            this.GroupHeader20.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("PaymentDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader20.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader20.HeightF = 27F;
+            this.GroupHeader20.Level = 20;
+            this.GroupHeader20.Name = "GroupHeader20";
             // 
             // table20
             // 
@@ -1696,439 +1436,27 @@
             this.tableCell40.StyleName = "GroupData1";
             this.tableCell40.Weight = 0.84306712660112637D;
             // 
-            // table21
-            // 
-            this.table21.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table21.Name = "table21";
-            this.table21.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow21});
-            this.table21.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow21
-            // 
-            this.tableRow21.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell41,
-            this.tableCell42});
-            this.tableRow21.Name = "tableRow21";
-            this.tableRow21.Weight = 1D;
-            // 
-            // tableCell41
-            // 
-            this.tableCell41.Name = "tableCell41";
-            this.tableCell41.StyleName = "GroupCaption1";
-            this.tableCell41.Text = "PAYMENT STATUS";
-            this.tableCell41.Weight = 0.1802851115687612D;
-            // 
-            // tableCell42
-            // 
-            this.tableCell42.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PaymentStatus]")});
-            this.tableCell42.Name = "tableCell42";
-            this.tableCell42.StyleName = "GroupData1";
-            this.tableCell42.Weight = 0.81971490059933216D;
-            // 
-            // table22
-            // 
-            this.table22.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table22.Name = "table22";
-            this.table22.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow22});
-            this.table22.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow22
-            // 
-            this.tableRow22.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell43,
-            this.tableCell44});
-            this.tableRow22.Name = "tableRow22";
-            this.tableRow22.Weight = 1D;
-            // 
-            // tableCell43
-            // 
-            this.tableCell43.Name = "tableCell43";
-            this.tableCell43.StyleName = "GroupCaption1";
-            this.tableCell43.Text = "METER NO";
-            this.tableCell43.Weight = 1121902.375D;
-            // 
-            // tableCell44
-            // 
-            this.tableCell44.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[MeterNo]")});
-            this.tableCell44.Name = "tableCell44";
-            this.tableCell44.StyleName = "GroupData1";
-            this.tableCell44.Weight = 9150865D;
-            // 
-            // table23
-            // 
-            this.table23.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table23.Name = "table23";
-            this.table23.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow23});
-            this.table23.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow23
-            // 
-            this.tableRow23.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell45,
-            this.tableCell46});
-            this.tableRow23.Name = "tableRow23";
-            this.tableRow23.Weight = 1D;
-            // 
-            // tableCell45
-            // 
-            this.tableCell45.Name = "tableCell45";
-            this.tableCell45.StyleName = "GroupCaption1";
-            this.tableCell45.Text = "METER TYPE";
-            this.tableCell45.Weight = 1330627.375D;
-            // 
-            // tableCell46
-            // 
-            this.tableCell46.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[MeterType]")});
-            this.tableCell46.Name = "tableCell46";
-            this.tableCell46.StyleName = "GroupData1";
-            this.tableCell46.Weight = 8942140D;
-            // 
-            // table24
-            // 
-            this.table24.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table24.Name = "table24";
-            this.table24.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow24});
-            this.table24.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow24
-            // 
-            this.tableRow24.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell47,
-            this.tableCell48});
-            this.tableRow24.Name = "tableRow24";
-            this.tableRow24.Weight = 1D;
-            // 
-            // tableCell47
-            // 
-            this.tableCell47.Name = "tableCell47";
-            this.tableCell47.StyleName = "GroupCaption1";
-            this.tableCell47.Text = "ISSUE DATE";
-            this.tableCell47.Weight = 0.12242665511379211D;
-            // 
-            // tableCell48
-            // 
-            this.tableCell48.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[IssueDate]")});
-            this.tableCell48.Name = "tableCell48";
-            this.tableCell48.StyleName = "GroupData1";
-            this.tableCell48.Weight = 0.87757340572667464D;
-            // 
-            // table25
-            // 
-            this.table25.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table25.Name = "table25";
-            this.table25.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow25});
-            this.table25.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow25
-            // 
-            this.tableRow25.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell49,
-            this.tableCell50});
-            this.tableRow25.Name = "tableRow25";
-            this.tableRow25.Weight = 1D;
-            // 
-            // tableCell49
-            // 
-            this.tableCell49.Name = "tableCell49";
-            this.tableCell49.StyleName = "GroupCaption1";
-            this.tableCell49.Text = "READING DATE";
-            this.tableCell49.Weight = 1559977.375D;
-            // 
-            // tableCell50
-            // 
-            this.tableCell50.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ReadingDate]")});
-            this.tableCell50.Name = "tableCell50";
-            this.tableCell50.StyleName = "GroupData1";
-            this.tableCell50.Weight = 8712790D;
-            // 
-            // table26
-            // 
-            this.table26.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table26.Name = "table26";
-            this.table26.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow26});
-            this.table26.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow26
-            // 
-            this.tableRow26.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell51,
-            this.tableCell52});
-            this.tableRow26.Name = "tableRow26";
-            this.tableRow26.Weight = 1D;
-            // 
-            // tableCell51
-            // 
-            this.tableCell51.Name = "tableCell51";
-            this.tableCell51.StyleName = "GroupCaption1";
-            this.tableCell51.Text = "DUE DATE";
-            this.tableCell51.Weight = 0.10616846404007177D;
-            // 
-            // tableCell52
-            // 
-            this.tableCell52.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[DueDate]")});
-            this.tableCell52.Name = "tableCell52";
-            this.tableCell52.StyleName = "GroupData1";
-            this.tableCell52.Weight = 0.89383153595992826D;
-            // 
-            // table27
-            // 
-            this.table27.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table27.Name = "table27";
-            this.table27.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow27});
-            this.table27.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow27
-            // 
-            this.tableRow27.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell53,
-            this.tableCell54});
-            this.tableRow27.Name = "tableRow27";
-            this.tableRow27.Weight = 1D;
-            // 
-            // tableCell53
-            // 
-            this.tableCell53.Name = "tableCell53";
-            this.tableCell53.StyleName = "GroupCaption1";
-            this.tableCell53.Text = "BILLING DATE";
-            this.tableCell53.Weight = 0.14067474316562D;
-            // 
-            // tableCell54
-            // 
-            this.tableCell54.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BillingDate]")});
-            this.tableCell54.Name = "tableCell54";
-            this.tableCell54.StyleName = "GroupData1";
-            this.tableCell54.Weight = 0.85932525683438D;
-            // 
-            // table28
-            // 
-            this.table28.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table28.Name = "table28";
-            this.table28.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow28});
-            this.table28.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow28
-            // 
-            this.tableRow28.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell55,
-            this.tableCell56});
-            this.tableRow28.Name = "tableRow28";
-            this.tableRow28.Weight = 1D;
-            // 
-            // tableCell55
-            // 
-            this.tableCell55.Name = "tableCell55";
-            this.tableCell55.StyleName = "GroupCaption1";
-            this.tableCell55.Text = "BILLING YEAR";
-            this.tableCell55.Weight = 0.14170091498221316D;
-            // 
-            // tableCell56
-            // 
-            this.tableCell56.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BillingYear]")});
-            this.tableCell56.Name = "tableCell56";
-            this.tableCell56.StyleName = "GroupData1";
-            this.tableCell56.Weight = 0.85829914585825362D;
-            // 
-            // table29
-            // 
-            this.table29.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table29.Name = "table29";
-            this.table29.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow29});
-            this.table29.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow29
-            // 
-            this.tableRow29.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell57,
-            this.tableCell58});
-            this.tableRow29.Name = "tableRow29";
-            this.tableRow29.Weight = 1D;
-            // 
-            // tableCell57
-            // 
-            this.tableCell57.Name = "tableCell57";
-            this.tableCell57.StyleName = "GroupCaption1";
-            this.tableCell57.Text = "BILLING MONTH";
-            this.tableCell57.Weight = 0.15792341703813423D;
-            // 
-            // tableCell58
-            // 
-            this.tableCell58.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BillingMonth]")});
-            this.tableCell58.Name = "tableCell58";
-            this.tableCell58.StyleName = "GroupData1";
-            this.tableCell58.Weight = 0.84207664380233249D;
-            // 
-            // table30
-            // 
-            this.table30.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table30.Name = "table30";
-            this.table30.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow30});
-            this.table30.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow30
-            // 
-            this.tableRow30.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell59,
-            this.tableCell60});
-            this.tableRow30.Name = "tableRow30";
-            this.tableRow30.Weight = 1D;
-            // 
-            // tableCell59
-            // 
-            this.tableCell59.Name = "tableCell59";
-            this.tableCell59.StyleName = "GroupCaption1";
-            this.tableCell59.Text = "BTNO";
-            this.tableCell59.Weight = 662927.375D;
-            // 
-            // tableCell60
-            // 
-            this.tableCell60.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BTNo]")});
-            this.tableCell60.Name = "tableCell60";
-            this.tableCell60.StyleName = "GroupData1";
-            this.tableCell60.Weight = 9609840D;
-            // 
-            // table31
-            // 
-            this.table31.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table31.Name = "table31";
-            this.table31.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow31});
-            this.table31.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow31
-            // 
-            this.tableRow31.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell61,
-            this.tableCell62});
-            this.tableRow31.Name = "tableRow31";
-            this.tableRow31.Weight = 1D;
-            // 
-            // tableCell61
-            // 
-            this.tableCell61.Name = "tableCell61";
-            this.tableCell61.StyleName = "GroupCaption1";
-            this.tableCell61.Text = "CUSTOMER NAME";
-            this.tableCell61.Weight = 0.17621610115209455D;
-            // 
-            // tableCell62
-            // 
-            this.tableCell62.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerName]")});
-            this.tableCell62.Name = "tableCell62";
-            this.tableCell62.StyleName = "GroupData1";
-            this.tableCell62.Weight = 0.82378391101599879D;
-            // 
-            // table32
-            // 
-            this.table32.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table32.Name = "table32";
-            this.table32.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow32});
-            this.table32.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow32
-            // 
-            this.tableRow32.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell63,
-            this.tableCell64});
-            this.tableRow32.Name = "tableRow32";
-            this.tableRow32.Weight = 1D;
-            // 
-            // tableCell63
-            // 
-            this.tableCell63.Name = "tableCell63";
-            this.tableCell63.StyleName = "GroupCaption1";
-            this.tableCell63.Text = "CUSTOMER NO";
-            this.tableCell63.Weight = 1539077.375D;
-            // 
-            // tableCell64
-            // 
-            this.tableCell64.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerNo]")});
-            this.tableCell64.Name = "tableCell64";
-            this.tableCell64.StyleName = "GroupData1";
-            this.tableCell64.Weight = 8733690D;
-            // 
-            // table33
-            // 
-            this.table33.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table33.Name = "table33";
-            this.table33.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow33});
-            this.table33.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow33
-            // 
-            this.tableRow33.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell65,
-            this.tableCell66});
-            this.tableRow33.Name = "tableRow33";
-            this.tableRow33.Weight = 1D;
-            // 
-            // tableCell65
-            // 
-            this.tableCell65.Name = "tableCell65";
-            this.tableCell65.StyleName = "GroupCaption1";
-            this.tableCell65.Text = "INVOICE NO";
-            this.tableCell65.Weight = 0.12039214990545878D;
-            // 
-            // tableCell66
-            // 
-            this.tableCell66.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[InvoiceNo]")});
-            this.tableCell66.Name = "tableCell66";
-            this.tableCell66.StyleName = "GroupData1";
-            this.tableCell66.Weight = 0.879607910935008D;
-            // 
-            // table34
-            // 
-            this.table34.LocationFloat = new DevExpress.Utils.PointFloat(0F, 2F);
-            this.table34.Name = "table34";
-            this.table34.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
-            this.tableRow34});
-            this.table34.SizeF = new System.Drawing.SizeF(627F, 25F);
-            // 
-            // tableRow34
-            // 
-            this.tableRow34.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.tableCell67,
-            this.tableCell68});
-            this.tableRow34.Name = "tableRow34";
-            this.tableRow34.Weight = 1D;
-            // 
-            // tableCell67
-            // 
-            this.tableCell67.Name = "tableCell67";
-            this.tableCell67.StyleName = "GroupCaption1";
-            this.tableCell67.Text = "UID";
-            this.tableCell67.Weight = 0.044232065787916171D;
-            // 
-            // tableCell68
-            // 
-            this.tableCell68.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[uid]")});
-            this.tableCell68.Name = "tableCell68";
-            this.tableCell68.StyleName = "GroupData1";
-            this.tableCell68.Weight = 0.9557679098758971D;
+            // GroupHeader27
+            // 
+            this.GroupHeader27.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+            new DevExpress.XtraReports.UI.GroupField("BillingDate", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader27.GroupUnion = DevExpress.XtraReports.UI.GroupUnion.WithFirstDetail;
+            this.GroupHeader27.HeightF = 27F;
+            this.GroupHeader27.Level = 21;
+            this.GroupHeader27.Name = "GroupHeader27";
+            // 
+            // Detail
+            // 
+            this.Detail.HeightF = 0F;
+            this.Detail.Name = "Detail";
+            // 
+            // GroupFooter1
+            // 
+            this.GroupFooter1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.label2});
+            this.GroupFooter1.GroupUnion = DevExpress.XtraReports.UI.GroupFooterUnion.WithLastDetail;
+            this.GroupFooter1.HeightF = 6F;
+            this.GroupFooter1.Name = "GroupFooter1";
             // 
             // label2
             // 
@@ -2219,20 +1547,7 @@
             this.GroupHeader18,
             this.GroupHeader19,
             this.GroupHeader20,
-            this.GroupHeader21,
-            this.GroupHeader22,
-            this.GroupHeader23,
-            this.GroupHeader24,
-            this.GroupHeader25,
-            this.GroupHeader26,
             this.GroupHeader27,
-            this.GroupHeader28,
-            this.GroupHeader29,
-            this.GroupHeader30,
-            this.GroupHeader31,
-            this.GroupHeader32,
-            this.GroupHeader33,
-            this.GroupHeader34,
             this.Detail,
             this.GroupFooter1});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
@@ -2240,6 +1555,7 @@
             this.DataMember = "ElectricityBills";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
+            this.Margins = new DevExpress.Drawing.DXMargins(100F, 100F, 68.75F, 100F);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
@@ -2270,20 +1586,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.table18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -2295,7 +1597,6 @@
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo1;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo2;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.XRLabel label1;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
         private DevExpress.XtraReports.UI.XRTable table1;
         private DevExpress.XtraReports.UI.XRTableRow tableRow1;
@@ -2396,76 +1697,7 @@
         private DevExpress.XtraReports.UI.XRTableRow tableRow20;
         private DevExpress.XtraReports.UI.XRTableCell tableCell39;
         private DevExpress.XtraReports.UI.XRTableCell tableCell40;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader21;
-        private DevExpress.XtraReports.UI.XRTable table21;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow21;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell41;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell42;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader22;
-        private DevExpress.XtraReports.UI.XRTable table22;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow22;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell43;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell44;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader23;
-        private DevExpress.XtraReports.UI.XRTable table23;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow23;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell45;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell46;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader24;
-        private DevExpress.XtraReports.UI.XRTable table24;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow24;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell47;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell48;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader25;
-        private DevExpress.XtraReports.UI.XRTable table25;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow25;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell49;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell50;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader26;
-        private DevExpress.XtraReports.UI.XRTable table26;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow26;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell51;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell52;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader27;
-        private DevExpress.XtraReports.UI.XRTable table27;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow27;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell53;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell54;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader28;
-        private DevExpress.XtraReports.UI.XRTable table28;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow28;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell55;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell56;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader29;
-        private DevExpress.XtraReports.UI.XRTable table29;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow29;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell57;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell58;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader30;
-        private DevExpress.XtraReports.UI.XRTable table30;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow30;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell59;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell60;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader31;
-        private DevExpress.XtraReports.UI.XRTable table31;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow31;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell61;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell62;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader32;
-        private DevExpress.XtraReports.UI.XRTable table32;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow32;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell63;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell64;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader33;
-        private DevExpress.XtraReports.UI.XRTable table33;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow33;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell65;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell66;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader34;
-        private DevExpress.XtraReports.UI.XRTable table34;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow34;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell67;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell68;
         private DevExpress.XtraReports.UI.DetailBand Detail;
         private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
         private DevExpress.XtraReports.UI.XRLabel label2;

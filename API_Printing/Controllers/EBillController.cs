@@ -35,25 +35,21 @@ namespace API_Printing.Controllers
         [HttpGet("PrintEBills")]
         public IActionResult PrintEBills()
         {
-            //var report = new PrintEBill01();
-            //using var stream = new MemoryStream();
-            //report.ExportToPdf(stream);
-            //stream.Seek(0, SeekOrigin.Begin);
-            //return File(stream.ToArray(), "application/pdf", "ElectricityBill.pdf");
+            // 1. Query record by BTNo
+            var bill = _context.EBills
+                               .FirstOrDefault(e => e.BTNo == "BTL-10743");
 
-
-            // 1. Query top 10 records from EF Core
-            var bills = _context.EBills
-                                .OrderByDescending(e => e.Uid) // Or another column
-                                .Take(10)
-                                .ToList();
+            if (bill == null)
+            {
+                return NotFound("Bill not found for BTNo BTL-10743");
+            }
 
             // 2. Create report instance
-            var report = new PrintEBill01();
+            var report = new PrintEBill02();
 
-            // 3. Assign data source
-            report.DataSource = bills;
-            report.DataMember = null; // Use root-level binding
+            // 3. Assign data source (single record wrapped in a list)
+            report.DataSource = new List<EBills> { bill };
+            report.DataMember = null;
 
             // 4. Export to PDF
             using var stream = new MemoryStream();
@@ -61,8 +57,8 @@ namespace API_Printing.Controllers
             stream.Seek(0, SeekOrigin.Begin);
 
             return File(stream.ToArray(), "application/pdf", "ElectricityBill.pdf");
-
         }
+
 
 
 
