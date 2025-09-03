@@ -1,5 +1,6 @@
 ﻿using API_Printing.Models;
 using API_Printing.Reports;
+using DevExpress.DataProcessing.InMemoryDataProcessor.GraphGenerator;
 using DevExpress.XtraRichEdit.Import.Html;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -33,31 +34,33 @@ namespace API_Printing.Controllers
 
 
         [HttpGet("PrintEBills")]
-        public IActionResult PrintEBills()
+        public async Task<IActionResult> PrintEBills()
         {
-            // 1. Query record by BTNo
-            var bill = _context.EBills
-                               .FirstOrDefault(e => e.BTNo == "BTL-10743");
+            var bills = await _context.EBills
+                                      .Where(e => e.InvoiceNo == "20250307373")
+                                      .ToListAsync();
 
-            if (bill == null)
+            if (bills == null || bills.Count == 0)
             {
-                return NotFound("Bill not found for BTNo BTL-10743");
+                return NotFound("Bill(s) not found.");
             }
 
-            // 2. Create report instance
-            var report = new PrintEBill02();
+            // Create report instance
+            var report = new PrintEBill02
+            {
+                DataSource = bills,
+                DataMember = null
+            };
 
-            // 3. Assign data source (single record wrapped in a list)
-            report.DataSource = new List<EBills> { bill };
-            report.DataMember = null;
-
-            // 4. Export to PDF
+            // Export to single PDF with multiple pages
             using var stream = new MemoryStream();
             report.ExportToPdf(stream);
             stream.Seek(0, SeekOrigin.Begin);
 
-            return File(stream.ToArray(), "application/pdf", "ElectricityBill.pdf");
+            return File(stream.ToArray(), "application/pdf", "ElectricityBills.pdf");
         }
+
+
 
 
 
