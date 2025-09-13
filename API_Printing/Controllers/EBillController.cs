@@ -37,7 +37,8 @@ namespace API_Printing.Controllers
         public async Task<IActionResult> PrintEBills()
         {
             var bills = await _context.EBills
-                                      .Where(e => e.InvoiceNo == "20250307373")
+                                      //.Where(e => e.InvoiceNo == "20250307373")
+                                      .Where(e => e.BTNo == "BTL-10743")
                                       .ToListAsync();
 
             if (bills == null || bills.Count == 0)
