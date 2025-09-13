@@ -534,13 +534,13 @@
             // 
             // xrTable11
             // 
-            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(5.709203F, 230.9091F);
+            this.xrTable11.LocationFloat = new DevExpress.Utils.PointFloat(4F, 230F);
             this.xrTable11.Name = "xrTable11";
             this.xrTable11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable11.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow62,
             this.xrTableRow63});
-            this.xrTable11.SizeF = new System.Drawing.SizeF(340F, 95F);
+            this.xrTable11.SizeF = new System.Drawing.SizeF(348F, 95F);
             this.xrTable11.StylePriority.UseTextAlignment = false;
             this.xrTable11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
@@ -563,11 +563,13 @@
             // 
             // xrPictureBox3
             // 
+            this.xrPictureBox3.Borders = DevExpress.XtraPrinting.BorderSide.Right;
             this.xrPictureBox3.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox3.ImageSource"));
-            this.xrPictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(0.001080513F, 0F);
+            this.xrPictureBox3.LocationFloat = new DevExpress.Utils.PointFloat(0.001100063F, 0F);
             this.xrPictureBox3.Name = "xrPictureBox3";
-            this.xrPictureBox3.SizeF = new System.Drawing.SizeF(147.1991F, 56.48651F);
+            this.xrPictureBox3.SizeF = new System.Drawing.SizeF(149F, 56.4865F);
             this.xrPictureBox3.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
+            this.xrPictureBox3.StylePriority.UseBorders = false;
             // 
             // xrTableCell135
             // 
@@ -610,9 +612,9 @@
             // xrPictureBox4
             // 
             this.xrPictureBox4.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox4.ImageSource"));
-            this.xrPictureBox4.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrPictureBox4.LocationFloat = new DevExpress.Utils.PointFloat(1.907349E-05F, 0F);
             this.xrPictureBox4.Name = "xrPictureBox4";
-            this.xrPictureBox4.SizeF = new System.Drawing.SizeF(340F, 38.51346F);
+            this.xrPictureBox4.SizeF = new System.Drawing.SizeF(346F, 38.51346F);
             this.xrPictureBox4.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             // 
             // xrTable9
