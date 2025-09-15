@@ -1,4 +1,5 @@
 using API_Printing.Models;
+using API_Printing.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BillingContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionBMSBT")));
 
+builder.Services.AddScoped<BillingService>();
 
 
 var app = builder.Build();
