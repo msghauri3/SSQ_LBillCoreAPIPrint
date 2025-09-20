@@ -29,13 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EBill01));
             DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery1 = new DevExpress.DataAccess.Sql.StoredProcQuery();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter1 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter2 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter3 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter4 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter5 = new DevExpress.DataAccess.Sql.QueryParameter();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EBill01));
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings1 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings2 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings3 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings4 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings5 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -362,7 +368,11 @@
             this.xrTableCell46 = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.Block = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Category = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BillingMonth = new DevExpress.XtraReports.Parameters.Parameter();
+            this.BillingYear = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Project = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
@@ -375,6 +385,37 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "ConnectionBMSBT";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            storedProcQuery1.Name = "SSQ_EBill02";
+            queryParameter1.Name = "@Block";
+            queryParameter1.Type = typeof(global::DevExpress.DataAccess.Expression);
+            queryParameter1.Value = new DevExpress.DataAccess.Expression("?Block", typeof(string));
+            queryParameter2.Name = "@Category";
+            queryParameter2.Type = typeof(global::DevExpress.DataAccess.Expression);
+            queryParameter2.Value = new DevExpress.DataAccess.Expression("?Category", typeof(string));
+            queryParameter3.Name = "@BillingMonth";
+            queryParameter3.Type = typeof(global::DevExpress.DataAccess.Expression);
+            queryParameter3.Value = new DevExpress.DataAccess.Expression("?BillingMonth", typeof(string));
+            queryParameter4.Name = "@BillingYear";
+            queryParameter4.Type = typeof(global::DevExpress.DataAccess.Expression);
+            queryParameter4.Value = new DevExpress.DataAccess.Expression("?BillingYear", typeof(string));
+            queryParameter5.Name = "@Project";
+            queryParameter5.Type = typeof(global::DevExpress.DataAccess.Expression);
+            queryParameter5.Value = new DevExpress.DataAccess.Expression("?Project", typeof(string));
+            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
+            queryParameter1,
+            queryParameter2,
+            queryParameter3,
+            queryParameter4,
+            queryParameter5});
+            storedProcQuery1.StoredProcName = "SSQ_EBill02";
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            storedProcQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
             // TopMargin
             // 
             this.TopMargin.HeightF = 50F;
@@ -382,7 +423,7 @@
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 80F;
+            this.BottomMargin.HeightF = 60F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
@@ -519,35 +560,35 @@
             this.xrTableCell180.Multiline = true;
             this.xrTableCell180.Name = "xrTableCell180";
             this.xrTableCell180.Text = "Customer Name";
-            this.xrTableCell180.Weight = 1.2743651966104288D;
+            this.xrTableCell180.Weight = 1.6479310050742542D;
             // 
             // xrTableCell181
             // 
             this.xrTableCell181.Multiline = true;
             this.xrTableCell181.Name = "xrTableCell181";
             this.xrTableCell181.Text = "Reference No";
-            this.xrTableCell181.Weight = 0.84395611985167063D;
+            this.xrTableCell181.Weight = 0.76024640999155568D;
             // 
             // xrTableCell183
             // 
             this.xrTableCell183.Multiline = true;
             this.xrTableCell183.Name = "xrTableCell183";
             this.xrTableCell183.Text = "House No";
-            this.xrTableCell183.Weight = 0.88167868353790058D;
+            this.xrTableCell183.Weight = 0.59182258493418993D;
             // 
             // xrTableCell184
             // 
             this.xrTableCell184.Multiline = true;
             this.xrTableCell184.Name = "xrTableCell184";
             this.xrTableCell184.Text = "Block";
-            this.xrTableCell184.Weight = 1D;
+            this.xrTableCell184.Weight = 1.1952154023367998D;
             // 
             // xrTableCell190
             // 
             this.xrTableCell190.Multiline = true;
             this.xrTableCell190.Name = "xrTableCell190";
             this.xrTableCell190.Text = "Barcode No";
-            this.xrTableCell190.Weight = 1D;
+            this.xrTableCell190.Weight = 0.80478459766320021D;
             // 
             // xrTableRow54
             // 
@@ -567,7 +608,7 @@
             this.xrTableCell164.Multiline = true;
             this.xrTableCell164.Name = "xrTableCell164";
             this.xrTableCell164.Text = "xrTableCell164";
-            this.xrTableCell164.Weight = 1.2743651966104288D;
+            this.xrTableCell164.Weight = 1.6479310050742542D;
             // 
             // xrTableCell170
             // 
@@ -576,14 +617,14 @@
             this.xrTableCell170.Multiline = true;
             this.xrTableCell170.Name = "xrTableCell170";
             this.xrTableCell170.Text = "xrTableCell170";
-            this.xrTableCell170.Weight = 0.84395611985167063D;
+            this.xrTableCell170.Weight = 0.76024640999155568D;
             // 
             // xrTableCell171
             // 
             this.xrTableCell171.Multiline = true;
             this.xrTableCell171.Name = "xrTableCell171";
             this.xrTableCell171.Text = "1";
-            this.xrTableCell171.Weight = 0.88167868353790058D;
+            this.xrTableCell171.Weight = 0.59182258493418993D;
             // 
             // xrTableCell173
             // 
@@ -592,7 +633,7 @@
             this.xrTableCell173.Multiline = true;
             this.xrTableCell173.Name = "xrTableCell173";
             this.xrTableCell173.Text = "xrTableCell173";
-            this.xrTableCell173.Weight = 1D;
+            this.xrTableCell173.Weight = 1.1952154023367998D;
             // 
             // xrTableCell174
             // 
@@ -601,7 +642,7 @@
             this.xrTableCell174.Multiline = true;
             this.xrTableCell174.Name = "xrTableCell174";
             this.xrTableCell174.Text = "xrTableCell174";
-            this.xrTableCell174.Weight = 1D;
+            this.xrTableCell174.Weight = 0.80478459766320021D;
             // 
             // xrTableRow52
             // 
@@ -621,21 +662,21 @@
             this.xrTableCell136.Multiline = true;
             this.xrTableCell136.Name = "xrTableCell136";
             this.xrTableCell136.Text = "Due Date";
-            this.xrTableCell136.Weight = 1.2743651966104288D;
+            this.xrTableCell136.Weight = 1.6479310050742542D;
             // 
             // xrTableCell141
             // 
             this.xrTableCell141.Multiline = true;
             this.xrTableCell141.Name = "xrTableCell141";
             this.xrTableCell141.Text = " Billing Month";
-            this.xrTableCell141.Weight = 0.84395611985167063D;
+            this.xrTableCell141.Weight = 0.76024640999155568D;
             // 
             // xrTableCell142
             // 
             this.xrTableCell142.Multiline = true;
             this.xrTableCell142.Name = "xrTableCell142";
             this.xrTableCell142.Text = "Billing Year";
-            this.xrTableCell142.Weight = 0.88167868353790058D;
+            this.xrTableCell142.Weight = 0.59182258493418993D;
             // 
             // xrTableCell150
             // 
@@ -644,7 +685,7 @@
             this.xrTableCell150.Name = "xrTableCell150";
             this.xrTableCell150.StylePriority.UseFont = false;
             this.xrTableCell150.Text = "Payment Within Due Date";
-            this.xrTableCell150.Weight = 1D;
+            this.xrTableCell150.Weight = 1.1952154023367998D;
             // 
             // xrTableCell151
             // 
@@ -653,7 +694,7 @@
             this.xrTableCell151.Name = "xrTableCell151";
             this.xrTableCell151.StylePriority.UseFont = false;
             this.xrTableCell151.Text = "Payment After Date";
-            this.xrTableCell151.Weight = 1D;
+            this.xrTableCell151.Weight = 0.80478459766320021D;
             // 
             // xrTableRow53
             // 
@@ -674,7 +715,7 @@
             this.xrTableCell153.Name = "xrTableCell153";
             this.xrTableCell153.Text = "xrTableCell153";
             this.xrTableCell153.TextFormatString = "{0:dd-MMM-yy}";
-            this.xrTableCell153.Weight = 1.2743651966104288D;
+            this.xrTableCell153.Weight = 1.6479310050742542D;
             // 
             // xrTableCell154
             // 
@@ -683,7 +724,7 @@
             this.xrTableCell154.Multiline = true;
             this.xrTableCell154.Name = "xrTableCell154";
             this.xrTableCell154.Text = "xrTableCell154";
-            this.xrTableCell154.Weight = 0.84395611985167063D;
+            this.xrTableCell154.Weight = 0.76024640999155568D;
             // 
             // xrTableCell160
             // 
@@ -692,7 +733,7 @@
             this.xrTableCell160.Multiline = true;
             this.xrTableCell160.Name = "xrTableCell160";
             this.xrTableCell160.Text = "xrTableCell160";
-            this.xrTableCell160.Weight = 0.88167868353790058D;
+            this.xrTableCell160.Weight = 0.59182258493418993D;
             // 
             // xrTableCell161
             // 
@@ -703,7 +744,7 @@
             this.xrTableCell161.Name = "xrTableCell161";
             this.xrTableCell161.StylePriority.UseFont = false;
             this.xrTableCell161.Text = "xrTableCell161";
-            this.xrTableCell161.Weight = 1D;
+            this.xrTableCell161.Weight = 1.1952154023367998D;
             // 
             // xrTableCell163
             // 
@@ -714,7 +755,7 @@
             this.xrTableCell163.Name = "xrTableCell163";
             this.xrTableCell163.StylePriority.UseFont = false;
             this.xrTableCell163.Text = "xrTableCell163";
-            this.xrTableCell163.Weight = 1D;
+            this.xrTableCell163.Weight = 0.80478459766320021D;
             // 
             // xrTableRow56
             // 
@@ -767,35 +808,35 @@
             this.xrTableCell222.Multiline = true;
             this.xrTableCell222.Name = "xrTableCell222";
             this.xrTableCell222.Text = "Customer Name";
-            this.xrTableCell222.Weight = 1.2743651966104288D;
+            this.xrTableCell222.Weight = 1.6479310050742542D;
             // 
             // xrTableCell223
             // 
             this.xrTableCell223.Multiline = true;
             this.xrTableCell223.Name = "xrTableCell223";
             this.xrTableCell223.Text = "Reference No";
-            this.xrTableCell223.Weight = 0.84395611985167063D;
+            this.xrTableCell223.Weight = 0.76024640999155568D;
             // 
             // xrTableCell224
             // 
             this.xrTableCell224.Multiline = true;
             this.xrTableCell224.Name = "xrTableCell224";
             this.xrTableCell224.Text = "House No ";
-            this.xrTableCell224.Weight = 0.88167868353790058D;
+            this.xrTableCell224.Weight = 0.59182258493418993D;
             // 
             // xrTableCell229
             // 
             this.xrTableCell229.Multiline = true;
             this.xrTableCell229.Name = "xrTableCell229";
             this.xrTableCell229.Text = "Block";
-            this.xrTableCell229.Weight = 1D;
+            this.xrTableCell229.Weight = 1.1952154023367998D;
             // 
             // xrTableCell230
             // 
             this.xrTableCell230.Multiline = true;
             this.xrTableCell230.Name = "xrTableCell230";
             this.xrTableCell230.Text = "Barcode No";
-            this.xrTableCell230.Weight = 1D;
+            this.xrTableCell230.Weight = 0.80478459766320021D;
             // 
             // xrTableRow59
             // 
@@ -815,7 +856,7 @@
             this.xrTableCell231.Multiline = true;
             this.xrTableCell231.Name = "xrTableCell231";
             this.xrTableCell231.Text = "xrTableCell231";
-            this.xrTableCell231.Weight = 1.2743651966104288D;
+            this.xrTableCell231.Weight = 1.6479310050742542D;
             // 
             // xrTableCell232
             // 
@@ -824,14 +865,14 @@
             this.xrTableCell232.Multiline = true;
             this.xrTableCell232.Name = "xrTableCell232";
             this.xrTableCell232.Text = "xrTableCell232";
-            this.xrTableCell232.Weight = 0.84395611985167063D;
+            this.xrTableCell232.Weight = 0.76024640999155568D;
             // 
             // xrTableCell233
             // 
             this.xrTableCell233.Multiline = true;
             this.xrTableCell233.Name = "xrTableCell233";
             this.xrTableCell233.Text = "1";
-            this.xrTableCell233.Weight = 0.88167868353790058D;
+            this.xrTableCell233.Weight = 0.59182258493418993D;
             // 
             // xrTableCell234
             // 
@@ -840,7 +881,7 @@
             this.xrTableCell234.Multiline = true;
             this.xrTableCell234.Name = "xrTableCell234";
             this.xrTableCell234.Text = "xrTableCell234";
-            this.xrTableCell234.Weight = 1D;
+            this.xrTableCell234.Weight = 1.1952154023367998D;
             // 
             // xrTableCell239
             // 
@@ -849,7 +890,7 @@
             this.xrTableCell239.Multiline = true;
             this.xrTableCell239.Name = "xrTableCell239";
             this.xrTableCell239.Text = "xrTableCell239";
-            this.xrTableCell239.Weight = 1D;
+            this.xrTableCell239.Weight = 0.80478459766320021D;
             // 
             // xrTableRow60
             // 
@@ -869,21 +910,21 @@
             this.xrTableCell240.Multiline = true;
             this.xrTableCell240.Name = "xrTableCell240";
             this.xrTableCell240.Text = "Due Date";
-            this.xrTableCell240.Weight = 1.2743651966104288D;
+            this.xrTableCell240.Weight = 1.6479310050742542D;
             // 
             // xrTableCell241
             // 
             this.xrTableCell241.Multiline = true;
             this.xrTableCell241.Name = "xrTableCell241";
             this.xrTableCell241.Text = " Billing Month";
-            this.xrTableCell241.Weight = 0.84395611985167063D;
+            this.xrTableCell241.Weight = 0.76024640999155568D;
             // 
             // xrTableCell242
             // 
             this.xrTableCell242.Multiline = true;
             this.xrTableCell242.Name = "xrTableCell242";
             this.xrTableCell242.Text = "Billing Year";
-            this.xrTableCell242.Weight = 0.88167868353790058D;
+            this.xrTableCell242.Weight = 0.59182258493418993D;
             // 
             // xrTableCell243
             // 
@@ -892,7 +933,7 @@
             this.xrTableCell243.Name = "xrTableCell243";
             this.xrTableCell243.StylePriority.UseFont = false;
             this.xrTableCell243.Text = "Payment Within Due Date";
-            this.xrTableCell243.Weight = 1D;
+            this.xrTableCell243.Weight = 1.1952154023367998D;
             // 
             // xrTableCell244
             // 
@@ -901,7 +942,7 @@
             this.xrTableCell244.Name = "xrTableCell244";
             this.xrTableCell244.StylePriority.UseFont = false;
             this.xrTableCell244.Text = "Payment After Date";
-            this.xrTableCell244.Weight = 1D;
+            this.xrTableCell244.Weight = 0.80478459766320021D;
             // 
             // xrTableRow61
             // 
@@ -922,7 +963,7 @@
             this.xrTableCell249.Name = "xrTableCell249";
             this.xrTableCell249.Text = "xrTableCell249";
             this.xrTableCell249.TextFormatString = "{0:dd-MMM-yy}";
-            this.xrTableCell249.Weight = 1.2743651966104288D;
+            this.xrTableCell249.Weight = 1.6479310050742542D;
             // 
             // xrTableCell250
             // 
@@ -931,7 +972,7 @@
             this.xrTableCell250.Multiline = true;
             this.xrTableCell250.Name = "xrTableCell250";
             this.xrTableCell250.Text = "xrTableCell250";
-            this.xrTableCell250.Weight = 0.84395611985167063D;
+            this.xrTableCell250.Weight = 0.76024640999155568D;
             // 
             // xrTableCell251
             // 
@@ -940,7 +981,7 @@
             this.xrTableCell251.Multiline = true;
             this.xrTableCell251.Name = "xrTableCell251";
             this.xrTableCell251.Text = "xrTableCell251";
-            this.xrTableCell251.Weight = 0.88167868353790058D;
+            this.xrTableCell251.Weight = 0.59182258493418993D;
             // 
             // xrTableCell252
             // 
@@ -951,7 +992,7 @@
             this.xrTableCell252.Name = "xrTableCell252";
             this.xrTableCell252.StylePriority.UseFont = false;
             this.xrTableCell252.Text = "xrTableCell252";
-            this.xrTableCell252.Weight = 1D;
+            this.xrTableCell252.Weight = 1.1952154023367998D;
             // 
             // xrTableCell253
             // 
@@ -962,7 +1003,7 @@
             this.xrTableCell253.Name = "xrTableCell253";
             this.xrTableCell253.StylePriority.UseFont = false;
             this.xrTableCell253.Text = "xrTableCell253";
-            this.xrTableCell253.Weight = 1D;
+            this.xrTableCell253.Weight = 0.80478459766320021D;
             // 
             // xrTable9
             // 
@@ -2696,11 +2737,12 @@
             // 
             // xrTableCell53
             // 
+            this.xrTableCell53.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Customer_Category]")});
             this.xrTableCell53.Font = new DevExpress.Drawing.DXFont("Arial", 8.75F);
             this.xrTableCell53.Multiline = true;
             this.xrTableCell53.Name = "xrTableCell53";
             this.xrTableCell53.StylePriority.UseFont = false;
-            this.xrTableCell53.Text = "Residential";
             this.xrTableCell53.Weight = 1.0559875704169481D;
             // 
             // xrTableCell54
@@ -3655,36 +3697,55 @@
             this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrLabel2.WordWrap = false;
             // 
-            // sqlDataSource1
+            // Block
             // 
-            this.sqlDataSource1.ConnectionName = "ConnectionBMSBT";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            storedProcQuery1.Name = "SSQ_EBill02";
-            queryParameter1.Name = "@Block";
-            queryParameter1.Type = typeof(global::DevExpress.DataAccess.Expression);
-            queryParameter1.Value = new DevExpress.DataAccess.Expression("", typeof(string));
-            queryParameter2.Name = "@Category";
-            queryParameter2.Type = typeof(global::DevExpress.DataAccess.Expression);
-            queryParameter2.Value = new DevExpress.DataAccess.Expression("", typeof(string));
-            queryParameter3.Name = "@BillingMonth";
-            queryParameter3.Type = typeof(global::DevExpress.DataAccess.Expression);
-            queryParameter3.Value = new DevExpress.DataAccess.Expression("", typeof(string));
-            queryParameter4.Name = "@BillingYear";
-            queryParameter4.Type = typeof(global::DevExpress.DataAccess.Expression);
-            queryParameter4.Value = new DevExpress.DataAccess.Expression("", typeof(string));
-            queryParameter5.Name = "@Project";
-            queryParameter5.Type = typeof(global::DevExpress.DataAccess.Expression);
-            queryParameter5.Value = new DevExpress.DataAccess.Expression("", typeof(string));
-            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
-            queryParameter1,
-            queryParameter2,
-            queryParameter3,
-            queryParameter4,
-            queryParameter5});
-            storedProcQuery1.StoredProcName = "SSQ_EBill02";
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            storedProcQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            this.Block.AllowNull = true;
+            this.Block.Name = "Block";
+            dynamicListLookUpSettings1.DataMember = "SSQ_EBill02";
+            dynamicListLookUpSettings1.DataSource = this.sqlDataSource1;
+            dynamicListLookUpSettings1.DisplayMember = "Block";
+            dynamicListLookUpSettings1.ValueMember = "Block";
+            this.Block.ValueSourceSettings = dynamicListLookUpSettings1;
+            // 
+            // Category
+            // 
+            this.Category.AllowNull = true;
+            this.Category.Name = "Category";
+            dynamicListLookUpSettings2.DataMember = "SSQ_EBill02";
+            dynamicListLookUpSettings2.DataSource = this.sqlDataSource1;
+            dynamicListLookUpSettings2.DisplayMember = "Customer_Category";
+            dynamicListLookUpSettings2.ValueMember = "Customer_Category";
+            this.Category.ValueSourceSettings = dynamicListLookUpSettings2;
+            // 
+            // BillingMonth
+            // 
+            this.BillingMonth.AllowNull = true;
+            this.BillingMonth.Name = "BillingMonth";
+            dynamicListLookUpSettings3.DataMember = "SSQ_EBill02";
+            dynamicListLookUpSettings3.DataSource = this.sqlDataSource1;
+            dynamicListLookUpSettings3.DisplayMember = "BillingMonth";
+            dynamicListLookUpSettings3.ValueMember = "BillingMonth";
+            this.BillingMonth.ValueSourceSettings = dynamicListLookUpSettings3;
+            // 
+            // BillingYear
+            // 
+            this.BillingYear.AllowNull = true;
+            this.BillingYear.Name = "BillingYear";
+            dynamicListLookUpSettings4.DataMember = "SSQ_EBill02";
+            dynamicListLookUpSettings4.DataSource = this.sqlDataSource1;
+            dynamicListLookUpSettings4.DisplayMember = "BillingYear";
+            dynamicListLookUpSettings4.ValueMember = "BillingYear";
+            this.BillingYear.ValueSourceSettings = dynamicListLookUpSettings4;
+            // 
+            // Project
+            // 
+            this.Project.AllowNull = true;
+            this.Project.Name = "Project";
+            dynamicListLookUpSettings5.DataMember = "SSQ_EBill02";
+            dynamicListLookUpSettings5.DataSource = this.sqlDataSource1;
+            dynamicListLookUpSettings5.DisplayMember = "Customer_Project";
+            dynamicListLookUpSettings5.ValueMember = "Customer_Project";
+            this.Project.ValueSourceSettings = dynamicListLookUpSettings5;
             // 
             // EBill01
             // 
@@ -3699,10 +3760,22 @@
             this.DataMember = "SSQ_EBill02";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(80F, 80F, 50F, 80F);
+            this.Margins = new DevExpress.Drawing.DXMargins(80F, 80F, 50F, 60F);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Block, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Category, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.BillingMonth, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.BillingYear, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Project, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+            this.Block,
+            this.Category,
+            this.BillingMonth,
+            this.BillingYear,
+            this.Project});
             this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).EndInit();
@@ -4040,12 +4113,17 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell253;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
         private DevExpress.XtraReports.UI.XRLabel xrLabel7;
         private DevExpress.XtraReports.UI.XRLabel xrLabel6;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
         private DevExpress.XtraReports.UI.XRLine xrLine1;
+        private DevExpress.XtraReports.Parameters.Parameter Block;
+        private DevExpress.XtraReports.Parameters.Parameter Category;
+        private DevExpress.XtraReports.Parameters.Parameter BillingMonth;
+        private DevExpress.XtraReports.Parameters.Parameter BillingYear;
+        private DevExpress.XtraReports.Parameters.Parameter Project;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
     }
 }
