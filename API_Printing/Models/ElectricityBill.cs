@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Printing.Models
 {
     [Table("ElectricityBills")]
-    public class EBills
+    public class ElectricityBill
     {
         [Key]
         public int Uid { get; set; }

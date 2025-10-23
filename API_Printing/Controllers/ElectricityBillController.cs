@@ -10,7 +10,7 @@ namespace API_Printing.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EBill01Controller : ControllerBase
+    public class ElectricityBillController : ControllerBase
     {
         [HttpGet("GetEBill")]
         public async Task<IActionResult> GetEBill(
@@ -23,7 +23,7 @@ namespace API_Printing.Controllers
         {
             try
             {
-                var report = new EBill01();
+                var report = new ElectricityBill();
 
                 if (report == null)
                 {

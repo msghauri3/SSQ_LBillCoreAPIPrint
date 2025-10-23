@@ -9,25 +9,9 @@ namespace API_Printing.Models
         {
         }
 
-        public virtual DbSet<Configurations> Configurations { get; set; }
-        public  DbSet<Customer> Customers { get; set; }
-        public DbSet<EBills> EBills { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Configurations>(entity =>
-            {
-                entity.HasKey(e => e.Uid);
-                entity.ToTable("Configuration");
-
-                entity.Property(e => e.ConfigKey)
-                      .HasMaxLength(50);
-
-                entity.Property(e => e.ConfigValue)
-                      .HasMaxLength(100);
-            });
-            
-            OnModelCreatingPartial(modelBuilder);
-        }
+        
+        public DbSet<ElectricityBill> EBills { get; set; }
+        public DbSet<MaintenanceBill> MaintenanceBills { get; set; }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }

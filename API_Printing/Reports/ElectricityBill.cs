@@ -6,18 +6,11 @@ using System.Drawing;
 
 namespace API_Printing.Reports
 {
-    public partial class PrintEBill02 : DevExpress.XtraReports.UI.XtraReport
+    public partial class ElectricityBill : DevExpress.XtraReports.UI.XtraReport
     {
-        public PrintEBill02()
+        public ElectricityBill()
         {
             InitializeComponent();
-        }
-
-        private void label1_BeforePrint(object sender, CancelEventArgs e)
-        {
-
-
-
         }
     }
 }
