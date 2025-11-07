@@ -12,7 +12,7 @@ namespace API_Printing.Models
         
         public DbSet<ElectricityBill> EBills { get; set; }
         public DbSet<MaintenanceBill> MaintenanceBills { get; set; }
-
+        public DbSet<ElectricityBillsNetMeter> ElectricityBillsNetMeters { get; set; }
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
