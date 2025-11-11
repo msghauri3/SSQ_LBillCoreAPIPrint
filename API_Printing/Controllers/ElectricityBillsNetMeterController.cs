@@ -24,7 +24,7 @@ namespace API_Printing.Controllers
             try
             {
                 // ✅ Initialize the DevExpress report
-                var report = new ElectricityBill();
+                var report = new NetMeteringBill();
 
                 if (report == null)
                     return StatusCode(500, "Failed to initialize the ElectricityBillNetMeter report.");
