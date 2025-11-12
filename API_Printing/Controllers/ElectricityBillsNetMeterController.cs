@@ -30,14 +30,20 @@ namespace API_Printing.Controllers
                     return StatusCode(500, "Failed to initialize the ElectricityBillNetMeter report.");
 
                 // ✅ Helper function to safely set parameters
-                void SetParameter(string paramName, object? value)
+                void SetParameter(string paramName, string? value)
                 {
-                    if (report.Parameters[paramName] != null)
+                    var param = report.Parameters[paramName];
+                    if (param != null)
                     {
-                        report.Parameters[paramName].Value = value;
-                        report.Parameters[paramName].Visible = false;
+                        if (!string.IsNullOrWhiteSpace(value))
+                            param.Value = value;
+                        else
+                            param.Value = DBNull.Value; // important fix
+
+                        param.Visible = false;
                     }
                 }
+
 
                 // ✅ Assign parameters from query
                 SetParameter("Category", Category);
