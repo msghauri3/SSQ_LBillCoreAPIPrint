@@ -1263,7 +1263,7 @@
             this.xrTableCell257.Multiline = true;
             this.xrTableCell257.Name = "xrTableCell257";
             this.xrTableCell257.StylePriority.UseFont = false;
-            this.xrTableCell257.Text = "BAHRIA TOWNLAHORE - NET METER ELECTRICITY BILL";
+            this.xrTableCell257.Text = "BAHRIA TOWN LAHORE - NET METER ELECTRICITY BILL";
             this.xrTableCell257.Weight = 3D;
             // 
             // xrTableCell260
@@ -1528,7 +1528,7 @@
             this.xrTableCell289.Multiline = true;
             this.xrTableCell289.Name = "xrTableCell289";
             this.xrTableCell289.StylePriority.UseFont = false;
-            this.xrTableCell289.Text = "BAHRIA TOWNLAHORE - NET METER ELECTRICITY BILL";
+            this.xrTableCell289.Text = "BAHRIA TOWN LAHORE - NET METER ELECTRICITY BILL";
             this.xrTableCell289.Weight = 3D;
             // 
             // xrTableCell292
@@ -3519,6 +3519,7 @@
             this.xrTableCell182.Font = new DevExpress.Drawing.DXFont("Arial", 8F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTableCell182.Multiline = true;
             this.xrTableCell182.Name = "xrTableCell182";
+            this.xrTableCell182.RowSpan = 2;
             this.xrTableCell182.StylePriority.UseBorders = false;
             this.xrTableCell182.StylePriority.UseFont = false;
             this.xrTableCell182.Text = "Category";
