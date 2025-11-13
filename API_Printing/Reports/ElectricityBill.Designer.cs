@@ -41,7 +41,7 @@
             DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings3 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
             DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings4 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
             DevExpress.XtraReports.Parameters.DynamicListLookUpSettings dynamicListLookUpSettings5 = new DevExpress.XtraReports.Parameters.DynamicListLookUpSettings();
-            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -358,13 +358,14 @@
             this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.xrTable12 = new DevExpress.XtraReports.UI.XRTable();
+            this.xrTableRow63 = new DevExpress.XtraReports.UI.XRTableRow();
+            this.xrTableCell39 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow7 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell39 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell40 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableRow9 = new DevExpress.XtraReports.UI.XRTableRow();
-            this.xrTableCell44 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell45 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell46 = new DevExpress.XtraReports.UI.XRTableCell();
             this.Block = new DevExpress.XtraReports.Parameters.Parameter();
@@ -382,14 +383,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
-            // sqlDataSource2
+            // sqlDataSource1
             // 
-            this.sqlDataSource2.ConnectionName = "ConnectionBMSBT";
-            this.sqlDataSource2.Name = "sqlDataSource2";
-            storedProcQuery1.Name = "GetEBillsByFilters_WithHistory_n";
+            this.sqlDataSource1.ConnectionName = "ConnectionBMSBT";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            storedProcQuery1.Name = "SSQ_GetElectricityBillsWithHistory";
             queryParameter1.Name = "@Block";
             queryParameter1.Type = typeof(global::DevExpress.DataAccess.Expression);
             queryParameter1.Value = new DevExpress.DataAccess.Expression("?Block", typeof(string));
@@ -411,10 +413,10 @@
             queryParameter3,
             queryParameter4,
             queryParameter5});
-            storedProcQuery1.StoredProcName = "GetEBillsByFilters_WithHistory_n";
-            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            storedProcQuery1.StoredProcName = "SSQ_GetElectricityBillsWithHistory";
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             storedProcQuery1});
-            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // TopMargin
             // 
@@ -448,7 +450,7 @@
             // 
             this.xrLabel2.CanGrow = false;
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'*\' + [CD_BTNo] + [BillingMonth] + [BillingYear] + \'*\'")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'*\' + [BTNo] + [BillingMonth] + [BillingYear] + \'*\'")});
             this.xrLabel2.Font = new DevExpress.Drawing.DXFont("IDAutomationHC39M Free Version", 8F);
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(239.6087F, 901.6669F);
             this.xrLabel2.Name = "xrLabel2";
@@ -605,7 +607,7 @@
             // xrTableCell164
             // 
             this.xrTableCell164.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_CustomerName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerName]")});
             this.xrTableCell164.Multiline = true;
             this.xrTableCell164.Name = "xrTableCell164";
             this.xrTableCell164.Text = "xrTableCell164";
@@ -614,7 +616,7 @@
             // xrTableCell170
             // 
             this.xrTableCell170.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_CustomerNo]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerNo]")});
             this.xrTableCell170.Multiline = true;
             this.xrTableCell170.Name = "xrTableCell170";
             this.xrTableCell170.Text = "xrTableCell170";
@@ -640,7 +642,7 @@
             // xrTableCell174
             // 
             this.xrTableCell174.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_BTNo]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BTNo]")});
             this.xrTableCell174.Multiline = true;
             this.xrTableCell174.Name = "xrTableCell174";
             this.xrTableCell174.Text = "xrTableCell174";
@@ -854,7 +856,7 @@
             // xrTableCell231
             // 
             this.xrTableCell231.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_CustomerName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerName]")});
             this.xrTableCell231.Multiline = true;
             this.xrTableCell231.Name = "xrTableCell231";
             this.xrTableCell231.Text = "xrTableCell231";
@@ -863,7 +865,7 @@
             // xrTableCell232
             // 
             this.xrTableCell232.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_CustomerNo]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerNo]")});
             this.xrTableCell232.Multiline = true;
             this.xrTableCell232.Name = "xrTableCell232";
             this.xrTableCell232.Text = "xrTableCell232";
@@ -889,7 +891,7 @@
             // xrTableCell239
             // 
             this.xrTableCell239.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_BTNo]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BTNo]")});
             this.xrTableCell239.Multiline = true;
             this.xrTableCell239.Name = "xrTableCell239";
             this.xrTableCell239.Text = "xrTableCell239";
@@ -1019,7 +1021,7 @@
             this.xrTable9.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow50,
             this.xrTableRow51});
-            this.xrTable9.SizeF = new System.Drawing.SizeF(377.8925F, 124.6154F);
+            this.xrTable9.SizeF = new System.Drawing.SizeF(377.8925F, 139.9999F);
             this.xrTable9.StylePriority.UseBorders = false;
             this.xrTable9.StylePriority.UseTextAlignment = false;
             this.xrTable9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -1050,9 +1052,9 @@
             this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Jameel Noori Nastaleeq", 12F);
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(1.041667F, 1.041667F);
             this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel3.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(375.8092F, 22.53202F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(375.8091F, 25.57095F);
             this.xrLabel3.StylePriority.UseBorders = false;
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
@@ -1086,7 +1088,7 @@
             this.xrPictureBox2.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox2.ImageSource"));
             this.xrPictureBox2.LocationFloat = new DevExpress.Utils.PointFloat(1.041667F, 0F);
             this.xrPictureBox2.Name = "xrPictureBox2";
-            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(375.8092F, 98.95834F);
+            this.xrPictureBox2.SizeF = new System.Drawing.SizeF(375.8091F, 111.304F);
             this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             this.xrPictureBox2.StylePriority.UseBorderColor = false;
             this.xrPictureBox2.StylePriority.UseBorders = false;
@@ -1132,6 +1134,7 @@
             // 
             // xrTableCell105
             // 
+            this.xrTableCell105.CanGrow = false;
             this.xrTableCell105.Multiline = true;
             this.xrTableCell105.Name = "xrTableCell105";
             this.xrTableCell105.Text = "Bill Amount";
@@ -1139,6 +1142,7 @@
             // 
             // xrTableCell116
             // 
+            this.xrTableCell116.CanGrow = false;
             this.xrTableCell116.Multiline = true;
             this.xrTableCell116.Name = "xrTableCell116";
             this.xrTableCell116.Text = "Charges";
@@ -1154,6 +1158,7 @@
             // 
             // xrTableCell134
             // 
+            this.xrTableCell134.CanGrow = false;
             this.xrTableCell134.Multiline = true;
             this.xrTableCell134.Name = "xrTableCell134";
             this.xrTableCell134.Text = "Up to 1,000";
@@ -1161,6 +1166,7 @@
             // 
             // xrTableCell140
             // 
+            this.xrTableCell140.CanGrow = false;
             this.xrTableCell140.Multiline = true;
             this.xrTableCell140.Name = "xrTableCell140";
             this.xrTableCell140.Text = "Rs.100/-";
@@ -1176,6 +1182,7 @@
             // 
             // xrTableCell149
             // 
+            this.xrTableCell149.CanGrow = false;
             this.xrTableCell149.Multiline = true;
             this.xrTableCell149.Name = "xrTableCell149";
             this.xrTableCell149.Text = "1,001 to 5,000";
@@ -1183,6 +1190,7 @@
             // 
             // xrTableCell152
             // 
+            this.xrTableCell152.CanGrow = false;
             this.xrTableCell152.Multiline = true;
             this.xrTableCell152.Name = "xrTableCell152";
             this.xrTableCell152.Text = "Rs.500/-";
@@ -1198,6 +1206,7 @@
             // 
             // xrTableCell159
             // 
+            this.xrTableCell159.CanGrow = false;
             this.xrTableCell159.Multiline = true;
             this.xrTableCell159.Name = "xrTableCell159";
             this.xrTableCell159.Text = "5,001 to 15,000";
@@ -1205,6 +1214,7 @@
             // 
             // xrTableCell162
             // 
+            this.xrTableCell162.CanGrow = false;
             this.xrTableCell162.Multiline = true;
             this.xrTableCell162.Name = "xrTableCell162";
             this.xrTableCell162.Text = "Rs.1000/-";
@@ -1220,6 +1230,7 @@
             // 
             // xrTableCell169
             // 
+            this.xrTableCell169.CanGrow = false;
             this.xrTableCell169.Multiline = true;
             this.xrTableCell169.Name = "xrTableCell169";
             this.xrTableCell169.Text = "Between 15,001 to 50,000";
@@ -1227,6 +1238,7 @@
             // 
             // xrTableCell172
             // 
+            this.xrTableCell172.CanGrow = false;
             this.xrTableCell172.Multiline = true;
             this.xrTableCell172.Name = "xrTableCell172";
             this.xrTableCell172.Text = "Rs.2500/-";
@@ -1242,6 +1254,7 @@
             // 
             // xrTableCell179
             // 
+            this.xrTableCell179.CanGrow = false;
             this.xrTableCell179.Multiline = true;
             this.xrTableCell179.Name = "xrTableCell179";
             this.xrTableCell179.Text = "Between 50,001 to 1 Lac";
@@ -1249,6 +1262,7 @@
             // 
             // xrTableCell182
             // 
+            this.xrTableCell182.CanGrow = false;
             this.xrTableCell182.Multiline = true;
             this.xrTableCell182.Name = "xrTableCell182";
             this.xrTableCell182.Text = "Rs.5000/-";
@@ -1264,6 +1278,7 @@
             // 
             // xrTableCell189
             // 
+            this.xrTableCell189.CanGrow = false;
             this.xrTableCell189.Multiline = true;
             this.xrTableCell189.Name = "xrTableCell189";
             this.xrTableCell189.Text = "Over 1 Lac";
@@ -1271,6 +1286,7 @@
             // 
             // xrTableCell192
             // 
+            this.xrTableCell192.CanGrow = false;
             this.xrTableCell192.Multiline = true;
             this.xrTableCell192.Name = "xrTableCell192";
             this.xrTableCell192.Text = "Rs.7000/-";
@@ -1290,6 +1306,7 @@
             // 
             // xrTableCell199
             // 
+            this.xrTableCell199.CanGrow = false;
             this.xrTableCell199.Multiline = true;
             this.xrTableCell199.Name = "xrTableCell199";
             this.xrTableCell199.Text = "FPA VAR";
@@ -1297,6 +1314,7 @@
             // 
             // xrTableCell200
             // 
+            this.xrTableCell200.CanGrow = false;
             this.xrTableCell200.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[fpa1]")});
             this.xrTableCell200.Multiline = true;
@@ -1306,6 +1324,7 @@
             // 
             // xrTableCell201
             // 
+            this.xrTableCell201.CanGrow = false;
             this.xrTableCell201.Multiline = true;
             this.xrTableCell201.Name = "xrTableCell201";
             this.xrTableCell201.Text = "FPA ED";
@@ -1313,6 +1332,7 @@
             // 
             // xrTableCell202
             // 
+            this.xrTableCell202.CanGrow = false;
             this.xrTableCell202.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[fpa2]")});
             this.xrTableCell202.Multiline = true;
@@ -1322,6 +1342,7 @@
             // 
             // xrTableCell203
             // 
+            this.xrTableCell203.CanGrow = false;
             this.xrTableCell203.Multiline = true;
             this.xrTableCell203.Name = "xrTableCell203";
             this.xrTableCell203.Text = "FPA GST";
@@ -1329,6 +1350,7 @@
             // 
             // xrTableCell204
             // 
+            this.xrTableCell204.CanGrow = false;
             this.xrTableCell204.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[fpa3]")});
             this.xrTableCell204.Multiline = true;
@@ -1421,7 +1443,7 @@
             // xrTableCell123
             // 
             this.xrTableCell123.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_1_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_1], 0, 3) + \' \' + [Year_1]\n")});
             this.xrTableCell123.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell123.Multiline = true;
             this.xrTableCell123.Name = "xrTableCell123";
@@ -1431,7 +1453,7 @@
             // xrTableCell128
             // 
             this.xrTableCell128.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_1]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_1]")});
             this.xrTableCell128.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell128.Multiline = true;
             this.xrTableCell128.Name = "xrTableCell128";
@@ -1442,7 +1464,7 @@
             // xrTableCell129
             // 
             this.xrTableCell129.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_1_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_1]")});
             this.xrTableCell129.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell129.Multiline = true;
             this.xrTableCell129.Name = "xrTableCell129";
@@ -1453,7 +1475,7 @@
             // xrTableCell130
             // 
             this.xrTableCell130.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_1_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_1]")});
             this.xrTableCell130.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell130.Multiline = true;
             this.xrTableCell130.Name = "xrTableCell130";
@@ -1474,7 +1496,7 @@
             // xrTableCell145
             // 
             this.xrTableCell145.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_2_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_2], 0, 3) + \' \' + [Year_2]\n")});
             this.xrTableCell145.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell145.Multiline = true;
             this.xrTableCell145.Name = "xrTableCell145";
@@ -1484,7 +1506,7 @@
             // xrTableCell146
             // 
             this.xrTableCell146.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_2]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_2]")});
             this.xrTableCell146.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell146.Multiline = true;
             this.xrTableCell146.Name = "xrTableCell146";
@@ -1495,7 +1517,7 @@
             // xrTableCell147
             // 
             this.xrTableCell147.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_2_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_2]")});
             this.xrTableCell147.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell147.Multiline = true;
             this.xrTableCell147.Name = "xrTableCell147";
@@ -1506,7 +1528,7 @@
             // xrTableCell148
             // 
             this.xrTableCell148.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_2_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_2]")});
             this.xrTableCell148.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell148.Multiline = true;
             this.xrTableCell148.Name = "xrTableCell148";
@@ -1527,7 +1549,7 @@
             // xrTableCell155
             // 
             this.xrTableCell155.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_3_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_3], 0, 3) + \' \' + [Year_3]\n")});
             this.xrTableCell155.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell155.Multiline = true;
             this.xrTableCell155.Name = "xrTableCell155";
@@ -1537,7 +1559,7 @@
             // xrTableCell156
             // 
             this.xrTableCell156.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_2]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_3]")});
             this.xrTableCell156.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell156.Multiline = true;
             this.xrTableCell156.Name = "xrTableCell156";
@@ -1548,7 +1570,7 @@
             // xrTableCell157
             // 
             this.xrTableCell157.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_3_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_3]")});
             this.xrTableCell157.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell157.Multiline = true;
             this.xrTableCell157.Name = "xrTableCell157";
@@ -1559,7 +1581,7 @@
             // xrTableCell158
             // 
             this.xrTableCell158.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_3_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_3]")});
             this.xrTableCell158.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell158.Multiline = true;
             this.xrTableCell158.Name = "xrTableCell158";
@@ -1579,7 +1601,7 @@
             // xrTableCell165
             // 
             this.xrTableCell165.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_4_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_4], 0, 3) + \' \' + [Year_4]\n")});
             this.xrTableCell165.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell165.Multiline = true;
             this.xrTableCell165.Name = "xrTableCell165";
@@ -1589,7 +1611,7 @@
             // xrTableCell166
             // 
             this.xrTableCell166.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_4]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_4]")});
             this.xrTableCell166.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell166.Multiline = true;
             this.xrTableCell166.Name = "xrTableCell166";
@@ -1600,7 +1622,7 @@
             // xrTableCell167
             // 
             this.xrTableCell167.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_4_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_4]")});
             this.xrTableCell167.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell167.Multiline = true;
             this.xrTableCell167.Name = "xrTableCell167";
@@ -1611,7 +1633,7 @@
             // xrTableCell168
             // 
             this.xrTableCell168.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_4_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_4]")});
             this.xrTableCell168.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell168.Multiline = true;
             this.xrTableCell168.Name = "xrTableCell168";
@@ -1632,7 +1654,7 @@
             // xrTableCell175
             // 
             this.xrTableCell175.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_5_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_5], 0, 3) + \' \' + [Year_5]\n")});
             this.xrTableCell175.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell175.Multiline = true;
             this.xrTableCell175.Name = "xrTableCell175";
@@ -1642,7 +1664,7 @@
             // xrTableCell176
             // 
             this.xrTableCell176.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_5]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_5]")});
             this.xrTableCell176.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell176.Multiline = true;
             this.xrTableCell176.Name = "xrTableCell176";
@@ -1653,7 +1675,7 @@
             // xrTableCell177
             // 
             this.xrTableCell177.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_5_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_5]")});
             this.xrTableCell177.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell177.Multiline = true;
             this.xrTableCell177.Name = "xrTableCell177";
@@ -1664,7 +1686,7 @@
             // xrTableCell178
             // 
             this.xrTableCell178.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_5_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_5]")});
             this.xrTableCell178.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell178.Multiline = true;
             this.xrTableCell178.Name = "xrTableCell178";
@@ -1685,7 +1707,7 @@
             // xrTableCell185
             // 
             this.xrTableCell185.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_6_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_6], 0, 3) + \' \' + [Year_6]\n")});
             this.xrTableCell185.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell185.Multiline = true;
             this.xrTableCell185.Name = "xrTableCell185";
@@ -1695,7 +1717,7 @@
             // xrTableCell186
             // 
             this.xrTableCell186.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_6]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_6]")});
             this.xrTableCell186.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell186.Multiline = true;
             this.xrTableCell186.Name = "xrTableCell186";
@@ -1706,7 +1728,7 @@
             // xrTableCell187
             // 
             this.xrTableCell187.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_6_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_6]")});
             this.xrTableCell187.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell187.Multiline = true;
             this.xrTableCell187.Name = "xrTableCell187";
@@ -1717,7 +1739,7 @@
             // xrTableCell188
             // 
             this.xrTableCell188.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_6_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_6]")});
             this.xrTableCell188.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell188.Multiline = true;
             this.xrTableCell188.Name = "xrTableCell188";
@@ -1738,7 +1760,7 @@
             // xrTableCell195
             // 
             this.xrTableCell195.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_7_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_7], 0, 3) + \' \' + [Year_7]\n")});
             this.xrTableCell195.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell195.Multiline = true;
             this.xrTableCell195.Name = "xrTableCell195";
@@ -1748,7 +1770,7 @@
             // xrTableCell196
             // 
             this.xrTableCell196.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_7]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_7]")});
             this.xrTableCell196.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell196.Multiline = true;
             this.xrTableCell196.Name = "xrTableCell196";
@@ -1759,7 +1781,7 @@
             // xrTableCell197
             // 
             this.xrTableCell197.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_7_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_7]")});
             this.xrTableCell197.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell197.Multiline = true;
             this.xrTableCell197.Name = "xrTableCell197";
@@ -1770,7 +1792,7 @@
             // xrTableCell198
             // 
             this.xrTableCell198.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_7_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_7]")});
             this.xrTableCell198.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell198.Multiline = true;
             this.xrTableCell198.Name = "xrTableCell198";
@@ -1790,7 +1812,7 @@
             // xrTableCell205
             // 
             this.xrTableCell205.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_8_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_8], 0, 3) + \' \' + [Year_8]\n")});
             this.xrTableCell205.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell205.Multiline = true;
             this.xrTableCell205.Name = "xrTableCell205";
@@ -1800,7 +1822,7 @@
             // xrTableCell206
             // 
             this.xrTableCell206.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_8]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_8]")});
             this.xrTableCell206.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell206.Multiline = true;
             this.xrTableCell206.Name = "xrTableCell206";
@@ -1811,7 +1833,7 @@
             // xrTableCell207
             // 
             this.xrTableCell207.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_8_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_8]")});
             this.xrTableCell207.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell207.Multiline = true;
             this.xrTableCell207.Name = "xrTableCell207";
@@ -1822,7 +1844,7 @@
             // xrTableCell208
             // 
             this.xrTableCell208.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_8_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_8]")});
             this.xrTableCell208.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell208.Multiline = true;
             this.xrTableCell208.Name = "xrTableCell208";
@@ -1842,7 +1864,7 @@
             // xrTableCell215
             // 
             this.xrTableCell215.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_9_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_9], 0, 3) + \' \' + [Year_9]\n")});
             this.xrTableCell215.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell215.Multiline = true;
             this.xrTableCell215.Name = "xrTableCell215";
@@ -1852,7 +1874,7 @@
             // xrTableCell216
             // 
             this.xrTableCell216.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_9]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_9]")});
             this.xrTableCell216.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell216.Multiline = true;
             this.xrTableCell216.Name = "xrTableCell216";
@@ -1863,7 +1885,7 @@
             // xrTableCell217
             // 
             this.xrTableCell217.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_9_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_9]")});
             this.xrTableCell217.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell217.Multiline = true;
             this.xrTableCell217.Name = "xrTableCell217";
@@ -1874,7 +1896,7 @@
             // xrTableCell218
             // 
             this.xrTableCell218.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_9_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_9]")});
             this.xrTableCell218.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell218.Multiline = true;
             this.xrTableCell218.Name = "xrTableCell218";
@@ -1894,7 +1916,7 @@
             // xrTableCell225
             // 
             this.xrTableCell225.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_10_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_10], 0, 3) + \' \' + [Year_10]\n")});
             this.xrTableCell225.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell225.Multiline = true;
             this.xrTableCell225.Name = "xrTableCell225";
@@ -1904,7 +1926,7 @@
             // xrTableCell226
             // 
             this.xrTableCell226.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_10]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_10]")});
             this.xrTableCell226.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell226.Multiline = true;
             this.xrTableCell226.Name = "xrTableCell226";
@@ -1915,7 +1937,7 @@
             // xrTableCell227
             // 
             this.xrTableCell227.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_10_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_10]")});
             this.xrTableCell227.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell227.Multiline = true;
             this.xrTableCell227.Name = "xrTableCell227";
@@ -1926,7 +1948,7 @@
             // xrTableCell228
             // 
             this.xrTableCell228.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_10_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_10]")});
             this.xrTableCell228.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell228.Multiline = true;
             this.xrTableCell228.Name = "xrTableCell228";
@@ -1947,7 +1969,7 @@
             // xrTableCell235
             // 
             this.xrTableCell235.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_11_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_11], 0, 3) + \' \' + [Year_11]\n")});
             this.xrTableCell235.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell235.Multiline = true;
             this.xrTableCell235.Name = "xrTableCell235";
@@ -1957,7 +1979,7 @@
             // xrTableCell236
             // 
             this.xrTableCell236.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_11]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_11]")});
             this.xrTableCell236.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell236.Multiline = true;
             this.xrTableCell236.Name = "xrTableCell236";
@@ -1968,7 +1990,7 @@
             // xrTableCell237
             // 
             this.xrTableCell237.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_11_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_11]")});
             this.xrTableCell237.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell237.Multiline = true;
             this.xrTableCell237.Name = "xrTableCell237";
@@ -1979,7 +2001,7 @@
             // xrTableCell238
             // 
             this.xrTableCell238.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_11_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_11]")});
             this.xrTableCell238.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell238.Multiline = true;
             this.xrTableCell238.Name = "xrTableCell238";
@@ -2000,7 +2022,7 @@
             // xrTableCell245
             // 
             this.xrTableCell245.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Month_12_Label]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Substring([Month_12], 0, 3) + \' \' + [Year_12]\n")});
             this.xrTableCell245.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell245.Multiline = true;
             this.xrTableCell245.Name = "xrTableCell245";
@@ -2010,7 +2032,7 @@
             // xrTableCell246
             // 
             this.xrTableCell246.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_Month_12]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Units_12]")});
             this.xrTableCell246.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell246.Multiline = true;
             this.xrTableCell246.Name = "xrTableCell246";
@@ -2021,7 +2043,7 @@
             // xrTableCell247
             // 
             this.xrTableCell247.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_12_Due]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_12]")});
             this.xrTableCell247.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell247.Multiline = true;
             this.xrTableCell247.Name = "xrTableCell247";
@@ -2032,7 +2054,7 @@
             // xrTableCell248
             // 
             this.xrTableCell248.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Bill_Month_12_Paid]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Payment_12]")});
             this.xrTableCell248.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTableCell248.Multiline = true;
             this.xrTableCell248.Name = "xrTableCell248";
@@ -2109,6 +2131,7 @@
             // 
             // xrTableCell93
             // 
+            this.xrTableCell93.CanGrow = false;
             this.xrTableCell93.Font = new DevExpress.Drawing.DXFont("Arial", 6.75F);
             this.xrTableCell93.Multiline = true;
             this.xrTableCell93.Name = "xrTableCell93";
@@ -3414,7 +3437,7 @@
             // xrTableCell18
             // 
             this.xrTableCell18.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_CustomerNo]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerNo]")});
             this.xrTableCell18.Multiline = true;
             this.xrTableCell18.Name = "xrTableCell18";
             this.xrTableCell18.Text = "xrTableCell18";
@@ -3557,7 +3580,7 @@
             // xrTableCell32
             // 
             this.xrTableCell32.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_TariffName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[TariffName]")});
             this.xrTableCell32.Multiline = true;
             this.xrTableCell32.Name = "xrTableCell32";
             this.xrTableCell32.Text = "Residential";
@@ -3706,7 +3729,7 @@
             // xrTableCell5
             // 
             this.xrTableCell5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_CustomerName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CustomerName]")});
             this.xrTableCell5.Multiline = true;
             this.xrTableCell5.Name = "xrTableCell5";
             this.xrTableCell5.Text = "xrTableCell5";
@@ -3715,7 +3738,7 @@
             // xrTableCell6
             // 
             this.xrTableCell6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[CD_BTNo]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[BTNo]")});
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.Text = "xrTableCell6";
@@ -3753,48 +3776,65 @@
             // PageHeader
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrPictureBox1,
+            this.xrTable12,
             this.xrTable3});
             this.PageHeader.HeightF = 52.29165F;
             this.PageHeader.Name = "PageHeader";
             // 
+            // xrTable12
+            // 
+            this.xrTable12.LocationFloat = new DevExpress.Utils.PointFloat(1.042143F, 0F);
+            this.xrTable12.Name = "xrTable12";
+            this.xrTable12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrTable12.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
+            this.xrTableRow63});
+            this.xrTable12.SizeF = new System.Drawing.SizeF(96.09875F, 52.29165F);
+            // 
+            // xrTableRow63
+            // 
+            this.xrTableRow63.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
+            this.xrTableCell39});
+            this.xrTableRow63.Name = "xrTableRow63";
+            this.xrTableRow63.Weight = 1D;
+            // 
+            // xrTableCell39
+            // 
+            this.xrTableCell39.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.xrTableCell39.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrPictureBox1});
+            this.xrTableCell39.Multiline = true;
+            this.xrTableCell39.Name = "xrTableCell39";
+            this.xrTableCell39.StylePriority.UseBorders = false;
+            this.xrTableCell39.Weight = 1D;
+            // 
             // xrPictureBox1
             // 
             this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("xrPictureBox1.ImageSource"));
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(1.041667F, 1.041667F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 4, 0, 100F);
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(97.14091F, 52.29165F);
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(94.01543F, 50.20831F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             this.xrPictureBox1.StylePriority.UsePadding = false;
             // 
             // xrTable3
             // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(97.14091F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow7,
             this.xrTableRow9});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(727F, 52.29165F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(629.8591F, 52.29165F);
             // 
             // xrTableRow7
             // 
             this.xrTableRow7.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell39,
             this.xrTableCell40});
             this.xrTableRow7.Name = "xrTableRow7";
             this.xrTableRow7.Weight = 1.4166666303362163D;
-            // 
-            // xrTableCell39
-            // 
-            this.xrTableCell39.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.xrTableCell39.Multiline = true;
-            this.xrTableCell39.Name = "xrTableCell39";
-            this.xrTableCell39.RowSpan = 2;
-            this.xrTableCell39.StylePriority.UseBorders = false;
-            this.xrTableCell39.Weight = 0.67967213095051782D;
             // 
             // xrTableCell40
             // 
@@ -3812,21 +3852,10 @@
             // xrTableRow9
             // 
             this.xrTableRow9.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
-            this.xrTableCell44,
             this.xrTableCell45,
             this.xrTableCell46});
             this.xrTableRow9.Name = "xrTableRow9";
             this.xrTableRow9.Weight = 0.40476183210100436D;
-            // 
-            // xrTableCell44
-            // 
-            this.xrTableCell44.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right)));
-            this.xrTableCell44.Multiline = true;
-            this.xrTableCell44.Name = "xrTableCell44";
-            this.xrTableCell44.StylePriority.UseBorders = false;
-            this.xrTableCell44.Text = "xrTableCell44";
-            this.xrTableCell44.Weight = 0.67967213095051782D;
             // 
             // xrTableCell45
             // 
@@ -3859,7 +3888,7 @@
             this.Block.AllowNull = true;
             this.Block.Name = "Block";
             dynamicListLookUpSettings1.DataMember = "GetEBillsByFilters_WithHistory_n";
-            dynamicListLookUpSettings1.DataSource = this.sqlDataSource2;
+            dynamicListLookUpSettings1.DataSource = this.sqlDataSource1;
             dynamicListLookUpSettings1.DisplayMember = "Block";
             dynamicListLookUpSettings1.ValueMember = "Block";
             this.Block.ValueSourceSettings = dynamicListLookUpSettings1;
@@ -3869,7 +3898,7 @@
             this.Category.AllowNull = true;
             this.Category.Name = "Category";
             dynamicListLookUpSettings2.DataMember = "GetEBillsByFilters_WithHistory_n";
-            dynamicListLookUpSettings2.DataSource = this.sqlDataSource2;
+            dynamicListLookUpSettings2.DataSource = this.sqlDataSource1;
             dynamicListLookUpSettings2.DisplayMember = "Category";
             dynamicListLookUpSettings2.ValueMember = "Category";
             this.Category.ValueSourceSettings = dynamicListLookUpSettings2;
@@ -3879,7 +3908,7 @@
             this.BillingMonth.AllowNull = true;
             this.BillingMonth.Name = "BillingMonth";
             dynamicListLookUpSettings3.DataMember = "GetEBillsByFilters_WithHistory_n";
-            dynamicListLookUpSettings3.DataSource = this.sqlDataSource2;
+            dynamicListLookUpSettings3.DataSource = this.sqlDataSource1;
             dynamicListLookUpSettings3.DisplayMember = "BillingMonth";
             dynamicListLookUpSettings3.ValueMember = "BillingMonth";
             this.BillingMonth.ValueSourceSettings = dynamicListLookUpSettings3;
@@ -3889,7 +3918,7 @@
             this.BillingYear.AllowNull = true;
             this.BillingYear.Name = "BillingYear";
             dynamicListLookUpSettings4.DataMember = "GetEBillsByFilters_WithHistory_n";
-            dynamicListLookUpSettings4.DataSource = this.sqlDataSource2;
+            dynamicListLookUpSettings4.DataSource = this.sqlDataSource1;
             dynamicListLookUpSettings4.DisplayMember = "BillingYear";
             dynamicListLookUpSettings4.ValueMember = "BillingYear";
             this.BillingYear.ValueSourceSettings = dynamicListLookUpSettings4;
@@ -3899,7 +3928,7 @@
             this.Project.AllowNull = true;
             this.Project.Name = "Project";
             dynamicListLookUpSettings5.DataMember = "GetEBillsByFilters_WithHistory_n";
-            dynamicListLookUpSettings5.DataSource = this.sqlDataSource2;
+            dynamicListLookUpSettings5.DataSource = this.sqlDataSource1;
             dynamicListLookUpSettings5.DisplayMember = "Project";
             dynamicListLookUpSettings5.ValueMember = "Project";
             this.Project.ValueSourceSettings = dynamicListLookUpSettings5;
@@ -3912,9 +3941,9 @@
             this.Detail,
             this.PageHeader});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
-            this.sqlDataSource2});
-            this.DataMember = "GetEBillsByFilters_WithHistory_n";
-            this.DataSource = this.sqlDataSource2;
+            this.sqlDataSource1});
+            this.DataMember = "SSQ_GetElectricityBillsWithHistory";
+            this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(50F, 50F, 45F, 50F);
             this.PageHeight = 1169;
@@ -3943,6 +3972,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xrTable12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
@@ -3957,10 +3987,8 @@
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
         private DevExpress.XtraReports.UI.XRTable xrTable3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow7;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell39;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell40;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow9;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell44;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell45;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell46;
         private DevExpress.XtraReports.UI.XRTable xrTable1;
@@ -4070,7 +4098,6 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell95;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell96;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow18;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell97;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell100;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell101;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell102;
@@ -4080,7 +4107,6 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell107;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell108;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow20;
-        private DevExpress.XtraReports.UI.XRTableCell xrTableCell109;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell112;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell113;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell114;
@@ -4274,12 +4300,17 @@
         private DevExpress.XtraReports.Parameters.Parameter BillingMonth;
         private DevExpress.XtraReports.Parameters.Parameter BillingYear;
         private DevExpress.XtraReports.Parameters.Parameter Project;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox2;
         private DevExpress.XtraReports.UI.XRTable xrTable11;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow62;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell122;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox5;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox7;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraReports.UI.XRTable xrTable12;
+        private DevExpress.XtraReports.UI.XRTableRow xrTableRow63;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell39;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell97;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell109;
     }
 }
